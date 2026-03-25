@@ -21,7 +21,7 @@ const Index = () => (
     <ResultExampleSection />
     <ForWhoSection />
     <OfferSection />
-    <GuaranteeSection />
+    
     <FinalCTASection />
 
     {/* Footer */}
