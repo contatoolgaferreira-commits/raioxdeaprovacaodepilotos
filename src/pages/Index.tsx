@@ -1,5 +1,4 @@
 import HeroSection from "@/components/HeroSection";
-import VSLSection from "@/components/VSLSection";
 import ProblemSection from "@/components/ProblemSection";
 import WhatIsSection from "@/components/WhatIsSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
@@ -14,7 +13,6 @@ import FinalCTASection from "@/components/FinalCTASection";
 const Index = () => (
   <main className="overflow-hidden">
     <HeroSection />
-    <VSLSection />
     <ProblemSection />
     <WhatIsSection />
     <HowItWorksSection />
