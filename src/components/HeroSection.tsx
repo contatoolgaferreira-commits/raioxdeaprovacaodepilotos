@@ -46,7 +46,7 @@ const HeroSection = () => (
         {/* Video embed */}
         <div className="relative aspect-video rounded-lg overflow-hidden mb-8 max-w-3xl mx-auto">
           <iframe
-            src="https://www.youtube.com/embed/lfLUmo_NheQ?rel=0"
+            src="https://www.youtube.com/embed/lfLUmo_NheQ?rel=0&modestbranding=1&showinfo=0&controls=1&disablekb=1"
             title="Raio-X da Aprovação para Pilotos"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
