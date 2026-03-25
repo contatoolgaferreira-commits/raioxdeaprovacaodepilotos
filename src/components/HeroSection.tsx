@@ -45,6 +45,14 @@ const HeroSection = () => (
 
         {/* Video embed */}
         <div className="relative aspect-video rounded-lg overflow-hidden mb-8 max-w-3xl mx-auto">
+          {/* Top mask to hide YouTube title/channel */}
+          <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-background to-transparent z-10 pointer-events-none" />
+          {/* Bottom mask to hide YouTube branding */}
+          <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none" />
+          {/* Left mask */}
+          <div className="absolute top-0 bottom-0 left-0 w-12 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+          {/* Right mask */}
+          <div className="absolute top-0 bottom-0 right-0 w-12 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
           <iframe
             src="https://www.youtube.com/embed/lfLUmo_NheQ?rel=0&modestbranding=1&showinfo=0&controls=1&disablekb=1"
             title="Raio-X da Aprovação para Pilotos"
