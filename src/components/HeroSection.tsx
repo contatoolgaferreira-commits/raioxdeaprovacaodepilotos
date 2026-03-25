@@ -58,7 +58,7 @@ const HeroSection = () => (
         </div>
 
         <div className="flex flex-col items-center gap-4 mb-10">
-          <Button variant="cta" size="lg" className="text-lg px-10 py-6 h-auto">
+          <Button variant="cta" size="lg" className="text-lg px-10 py-6 h-auto" onClick={() => window.open("https://chk.eduzz.com/39YN43Y3WO", "_blank")}>
             Fazer meu Raio-X agora
           </Button>
           <p className="text-muted-foreground text-sm">
