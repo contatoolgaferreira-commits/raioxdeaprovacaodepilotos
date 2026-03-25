@@ -1,16 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import VSLSection from "@/components/VSLSection";
+import ProblemSection from "@/components/ProblemSection";
+import WhatIsSection from "@/components/WhatIsSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
+import WhatYouGetSection from "@/components/WhatYouGetSection";
+import AlertSection from "@/components/AlertSection";
+import ResultExampleSection from "@/components/ResultExampleSection";
+import ForWhoSection from "@/components/ForWhoSection";
+import OfferSection from "@/components/OfferSection";
+import GuaranteeSection from "@/components/GuaranteeSection";
+import FinalCTASection from "@/components/FinalCTASection";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
-  return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
-  );
-};
+const Index = () => (
+  <main className="overflow-hidden">
+    <HeroSection />
+    <VSLSection />
+    <ProblemSection />
+    <WhatIsSection />
+    <HowItWorksSection />
+    <WhatYouGetSection />
+    <AlertSection />
+    <ResultExampleSection />
+    <ForWhoSection />
+    <OfferSection />
+    <GuaranteeSection />
+    <FinalCTASection />
 
-const Index = PlaceholderIndex;
+    {/* Footer */}
+    <footer className="py-8 border-t border-border">
+      <div className="container mx-auto px-6 text-center text-sm text-muted-foreground">
+        <p>Raio-X da Aprovação para Pilotos · Produto digital · Entrega imediata</p>
+        <p className="mt-1">Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </main>
+);
 
 export default Index;
