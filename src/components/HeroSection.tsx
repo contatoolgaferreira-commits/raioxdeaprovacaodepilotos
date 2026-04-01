@@ -43,21 +43,7 @@ const HeroSection = () => (
           Um diagnóstico comportamental que revela seu risco real de reprovação antes da entrevista
         </p>
 
-        {/* Video embed */}
-        <div className="relative aspect-video rounded-lg overflow-hidden mb-8 max-w-3xl mx-auto">
-          <div className="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
-          <div className="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
-          <iframe
-            src="https://www.youtube.com/embed/O_TB-0Cd4T8?rel=0&modestbranding=1&showinfo=0&controls=1&disablekb=1"
-            title="Raio-X da Aprovação para Pilotos"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            loading="lazy"
-            className="absolute inset-0 w-full h-full"
-          />
-        </div>
-
-        <div className="flex flex-col items-center gap-4 mb-10">
+        <div className="flex flex-col items-center gap-4 mb-10 mt-2">
           <Button variant="cta" size="lg" className="text-lg px-10 py-6 h-auto" onClick={() => window.open("https://chk.eduzz.com/39YN43Y3WO", "_blank")}>
             Fazer meu Raio-X agora
           </Button>
