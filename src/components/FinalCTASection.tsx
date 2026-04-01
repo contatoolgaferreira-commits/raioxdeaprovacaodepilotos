@@ -26,7 +26,7 @@ const FinalCTASection = () => (
           Você pode ir para a seleção achando que está pronto — ou{" "}
           <span className="text-foreground font-medium">descobrir antes</span>.
         </p>
-        <Button variant="cta" size="lg" className="text-lg px-12 py-6 h-auto" onClick={() => window.open("https://chk.eduzz.com/39YN43Y3WO", "_blank")}>
+        <Button variant="cta" size="lg" className="text-lg px-12 py-6 h-auto" onClick={handleCTAClick}>
           Quero fazer meu Raio-X agora
         </Button>
         <p className="text-muted-foreground text-sm mt-4">

@@ -45,7 +45,7 @@ const OfferSection = () => (
             <p className="text-5xl font-display font-bold text-gradient-gold">R$67</p>
           </div>
 
-          <Button variant="cta" size="lg" className="text-lg px-12 py-6 h-auto w-full max-w-sm" onClick={() => window.open("https://chk.eduzz.com/39YN43Y3WO", "_blank")}>
+          <Button variant="cta" size="lg" className="text-lg px-12 py-6 h-auto w-full max-w-sm" onClick={handleCTAClick}>
             Fazer meu Raio-X agora
           </Button>
         </div>
