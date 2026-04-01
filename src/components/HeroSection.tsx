@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Shield, Zap, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { handleCTAClick } from "@/lib/pixel";
 import heroImg from "@/assets/hero-aviation.jpg";
 
 const badges = [
