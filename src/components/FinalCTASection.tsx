@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { handleCTAClick } from "@/lib/pixel";
 
 const FinalCTASection = () => (
   <section className="py-24 bg-card relative overflow-hidden">
