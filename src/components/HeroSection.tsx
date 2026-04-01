@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Shield, Zap, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { handleCTAClick } from "@/lib/pixel";
 import heroImg from "@/assets/hero-aviation.jpg";
 
 const badges = [
@@ -44,7 +45,7 @@ const HeroSection = () => (
         </p>
 
         <div className="flex flex-col items-center gap-4 mb-10 mt-2">
-          <Button variant="cta" size="lg" className="text-lg px-10 py-6 h-auto" onClick={() => window.open("https://chk.eduzz.com/39YN43Y3WO", "_blank")}>
+          <Button variant="cta" size="lg" className="text-lg px-10 py-6 h-auto" onClick={handleCTAClick}>
             Fazer meu Raio-X agora
           </Button>
           <p className="text-muted-foreground text-sm">
