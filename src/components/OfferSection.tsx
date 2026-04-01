@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Check, Zap } from "lucide-react";
+import { handleCTAClick } from "@/lib/pixel";
 
 const includes = [
   "Diagnóstico completo",
