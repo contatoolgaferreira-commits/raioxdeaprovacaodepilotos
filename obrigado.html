@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compra Confirmada | Raio-X de Aprovação para Pilotos</title>
+
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1217594756851146');
+    fbq('track', 'PageView');
+    fbq('track', 'Purchase', {
+      value: 67.00,
+      currency: 'BRL'
+    });
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1217594756851146&ev=Purchase&noscript=1&cd[value]=67.00&cd[currency]=BRL"/>
+  </noscript>
+  <!-- End Facebook Pixel -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0a0f1e;
+      --gold: #c9a84c;
+      --gold-light: #e8c96a;
+      --white: #f4f4f0;
+      --gray: #8a8f9e;
+    }
+
+    body {
+      background-color: var(--navy);
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: -30%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 24px;
+      max-width: 560px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      animation: fadeUp 0.9s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .badge {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 2px;
+      margin-bottom: 32px;
+      animation: fadeUp 0.9s ease 0.1s both;
+    }
+
+    .checkmark {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 32px;
+      animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s both;
+    }
+
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.4); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+
+    .checkmark svg {
+      width: 32px;
+      height: 32px;
+      stroke: var(--navy);
+      stroke-width: 3;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .checkmark svg path {
+      stroke-dasharray: 50;
+      stroke-dashoffset: 50;
+      animation: drawCheck 0.5s ease 0.8s forwards;
+    }
+
+    @keyframes drawCheck {
+      to { stroke-dashoffset: 0; }
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(42px, 8vw, 62px);
+      letter-spacing: 2px;
+      line-height: 1;
+      color: var(--white);
+      margin-bottom: 16px;
+      animation: fadeUp 0.9s ease 0.4s both;
+    }
+
+    h1 span { color: var(--gold); }
+
+    .subtitle {
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--gray);
+      line-height: 1.6;
+      margin-bottom: 40px;
+      animation: fadeUp 0.9s ease 0.5s both;
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: linear-gradient(to right, var(--gold), var(--gold-light));
+      margin: 0 auto 40px;
+      animation: fadeUp 0.9s ease 0.55s both;
+    }
+
+    .next-steps {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 8px;
+      padding: 28px 32px;
+      text-align: left;
+      margin-bottom: 32px;
+      animation: fadeUp 0.9s ease 0.6s both;
+    }
+
+    .next-steps h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 18px;
+      letter-spacing: 2px;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .step:last-child { margin-bottom: 0; }
+
+    .step-num {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .step p {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.5;
+    }
+
+    .step p strong {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      color: rgba(138,143,158,0.6);
+      animation: fadeUp 0.9s ease 0.7s both;
+    }
+
+    .particles {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 50%;
+      opacity: 0;
+      animation: float linear infinite;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(100vh); opacity: 0; }
+      10%  { opacity: 0.6; }
+      90%  { opacity: 0.2; }
+      100% { transform: translateY(-10vh); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="particles" id="particles"></div>
+
+  <div class="container">
+    <div class="badge">✈ Compra Confirmada</div>
+
+    <div class="checkmark">
+      <svg viewBox="0 0 24 24">
+        <path d="M5 13l4 4L19 7"/>
+      </svg>
+    </div>
+
+    <h1>Bem-vindo ao<br><span>Raio-X</span></h1>
+
+    <p class="subtitle">
+      Sua jornada para a aprovação nas companhias aéreas começa agora.<br>
+      Verifique seu e-mail para acessar o diagnóstico.
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="next-steps">
+      <h3>Próximos Passos</h3>
+
+      <div class="step">
+        <div class="step-num">1</div>
+        <p><strong>Verifique seu e-mail</strong> — o acesso ao Raio-X foi enviado para a caixa de entrada cadastrada no checkout.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <p><strong>Faça o diagnóstico completo</strong> — responda com honestidade para ter um resultado preciso do seu perfil comportamental.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <p><strong>Leia seu relatório</strong> — descubra o que está travando sua aprovação e como corrigir antes do próximo processo seletivo.</p>
+      </div>
+    </div>
+
+    <p class="footer-note">Dúvidas? Entre em contato: contato@olgaferreira.com.br</p>
+  </div>
+
+  <script>
+    const container = document.getElementById('particles');
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left = Math.random() * 100 + '%';
+      p.style.width = (Math.random() * 2 + 1) + 'px';
+      p.style.height = p.style.width;
+      p.style.animationDuration = (Math.random() * 12 + 8) + 's';
+      p.style.animationDelay = (Math.random() * 10) + 's';
+      container.appendChild(p);
+    }
+  </script>
+</body>
+</html>
