@@ -7,6 +7,13 @@
 2. Abra a página no Elementor → ícone de pasta (Adicionar template) → **Meus templates** → **Inserir**.
 3. Publique e confira a página em uma aba anônima. As animações só rodam na página publicada; no editor tudo aparece estático.
 
+## Imagens
+As imagens novas ficam em `elementor/imagens/` (logo, logo branca para o fundo escuro, foto da Olga e as imagens da primeira dobra para computador e celular).
+O template aponta para elas no GitHub. Ao importar, o Elementor copia cada imagem para a Biblioteca de Mídia do WordPress, então importe enquanto este branch (ou o `main`, depois do merge) estiver disponível.
+As imagens da primeira dobra foram geradas com IA (Kairogen, modelo Flux 2 Max).
+
+Cor de destaque da marca: amarelo `#F0A90B`.
+
 ## Como funciona
 - O primeiro bloco, **"00 — Estilos e animações (não apagar)"**, tem um widget HTML com todo o CSS e o JS da página. Ele fica invisível no site.
 - Os efeitos são ligados por classes em *Avançado → Classes CSS*:
