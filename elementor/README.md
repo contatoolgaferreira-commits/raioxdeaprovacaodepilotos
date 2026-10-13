@@ -14,6 +14,10 @@ As imagens da primeira dobra foram geradas com IA (Kairogen, modelo Flux 2 Max).
 
 Cor de destaque da marca: amarelo `#F0A90B`.
 
+## Condição do Mês do Aviador
+De R$ 697,00 por R$ 597 à vista ou 12x de R$ 61,74, válida até 31/10/2026 (23h59, horário de Brasília).
+A contagem regressiva some sozinha depois do prazo, mas os textos com o preço continuam na página: depois de 31/10, troque o preço na seção "10 — Oferta e compra", o selo da primeira dobra, a nota da seção "13 — Fechamento", a pergunta do FAQ e o texto da barra fixa (no widget HTML do bloco "00").
+
 ## Como funciona
 - O primeiro bloco, **"00 — Estilos e animações (não apagar)"**, tem um widget HTML com todo o CSS e o JS da página. Ele fica invisível no site.
 - Os efeitos são ligados por classes em *Avançado → Classes CSS*:

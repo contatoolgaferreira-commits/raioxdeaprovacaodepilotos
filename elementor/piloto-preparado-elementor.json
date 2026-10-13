@@ -24,14 +24,14 @@
           "isInner": false,
           "widgetType": "html",
           "settings": {
-            "html": "<!-- PILOTO PREPARADO: estilos e animações da página. Não apague este bloco. -->\n<style>\n/* ==========================================================\n   PILOTO PREPARADO — design system + animações\n   Tudo é controlado por classes CSS (Avançado > Classes CSS).\n   ========================================================== */\n:root{\n  --pp-navy:#0B1D31;--pp-navy-2:#132B45;--pp-yellow:#F0A90B;--pp-yellow-soft:#FDF0D3;\n  --pp-blue:#0669E9;--pp-ink:#3A4553;--pp-line:rgba(11,29,49,.09);\n  --pp-ease:cubic-bezier(.2,.7,.2,1);\n}\nhtml{scroll-behavior:smooth}\nbody{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}\n::selection{background:var(--pp-yellow);color:var(--pp-navy)}\n#checkout{scroll-margin-top:10px}\n.pp-assets{display:none!important}\n.elementor-editor-active .pp-assets{display:flex!important;min-height:40px}\n\n/* ---------- Revelação ao rolar ---------- */\n.pp-reveal,.pp-title{transition:opacity .9s var(--pp-ease),translate .9s var(--pp-ease)}\n.pp-js .pp-reveal:not(.pp-in),.pp-js .pp-title:not(.pp-in){opacity:0;translate:0 28px}\n.pp-item,.pp-card{transition:opacity .75s var(--pp-ease),translate .75s var(--pp-ease),transform .4s var(--pp-ease),box-shadow .4s var(--pp-ease),border-color .4s,background-color .4s}\n.pp-js .pp-stagger:not(.pp-in) .pp-item{opacity:0;translate:0 22px}\n\n/* ---------- Títulos ---------- */\n.pp-title .elementor-heading-title{letter-spacing:-.02em;text-wrap:balance}\n.pp-title .elementor-heading-title::after{content:\"\";display:block;width:56px;height:4px;border-radius:4px;background:var(--pp-yellow);margin:22px auto 0;transition:width 1s .35s var(--pp-ease)}\n.pp-js .pp-title:not(.pp-in) .elementor-heading-title::after{width:0}\n.pp-title-left .elementor-heading-title{text-align:left}\n.pp-title-left .elementor-heading-title::after{margin-left:0}\n\n.pp-eyebrow{text-align:center;margin-bottom:-14px!important}\n.pp-eyebrow.pp-left{text-align:left}\n.pp-eyebrow .elementor-heading-title{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:rgba(11,29,49,.06);color:var(--pp-navy)!important;font:600 12px/1 'Sora',sans-serif!important;letter-spacing:.16em;text-transform:uppercase}\n.pp-eyebrow .elementor-heading-title::before{content:\"\";width:6px;height:6px;border-radius:50%;background:var(--pp-yellow);box-shadow:0 0 0 4px rgba(240,169,11,.28);animation:ppBlink 2.4s infinite}\n.pp-dark .pp-eyebrow .elementor-heading-title{background:rgba(240,169,11,.1);color:var(--pp-yellow)!important}\n\n/* ---------- Textos ---------- */\n.pp-narrow{width:100%;max-width:760px;margin-left:auto!important;margin-right:auto!important}\n.pp-center,.pp-center p{text-align:center}\n.pp-text p{margin:0 0 1em}.pp-text p:last-child{margin-bottom:0}\n.pp-text strong{color:var(--pp-navy)}\n.pp-dark .pp-text strong{color:#fff}\n.pp-muted{opacity:.75}\n.pp-emphasis p{font-size:1.06em;text-align:center}\n.pp-emphasis strong{background:linear-gradient(transparent 60%,rgba(240,169,11,.45) 60%);padding:0 2px}\n.pp-quote p:last-child{margin-top:30px;padding:26px 30px;border-radius:20px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-top:3px solid var(--pp-yellow);color:#fff}\n.pp-tagline p{margin:0;padding:6px 0 6px 18px;border-left:3px solid var(--pp-yellow);font-weight:600;color:#fff}\n.pp-signature p:last-child{margin-top:24px;padding:20px 24px;border-left:4px solid var(--pp-yellow);border-radius:0 16px 16px 0;background:var(--pp-yellow-soft)}\n.pp-signature p:last-child strong{color:var(--pp-navy)}\n.pp-note{width:100%;max-width:860px;margin-left:auto!important;margin-right:auto!important;background:#fff;border:1px solid var(--pp-line);border-left:4px solid var(--pp-yellow);border-radius:14px;padding:18px 24px!important}\n.pp-note p{margin:0}\n\n/* ---------- Grades ---------- */\n.pp-grid{display:grid!important;gap:22px!important;padding:0!important;width:100%}\n.pp-grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}\n.pp-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}\n.pp-grid-3>.elementor-element:last-child:nth-child(3n+1){grid-column:1/-1}\n.pp-split{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px!important;align-items:center;padding:0!important;width:100%}\n.pp-split-olga{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}\n.pp-grid>.elementor-element,.pp-split>.elementor-element,.pp-offer>.elementor-element{width:auto!important;max-width:none!important;margin:0!important}\n@media(max-width:1024px){\n  .pp-grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}\n  .pp-grid-3>.elementor-element:last-child:nth-child(3n+1){grid-column:auto}\n  .pp-grid-3>.elementor-element:last-child:nth-child(odd){grid-column:1/-1}\n}\n@media(max-width:900px){.pp-split{grid-template-columns:1fr;gap:36px!important}}\n@media(max-width:767px){.pp-grid-2,.pp-grid-3{grid-template-columns:1fr}.pp-grid{gap:16px!important}}\n\n/* ---------- Cards ---------- */\n.pp-card{position:relative;background:#fff;border:1px solid var(--pp-line);border-radius:20px;padding:32px 28px!important;box-shadow:0 1px 2px rgba(11,29,49,.04),0 14px 34px -20px rgba(11,29,49,.2);overflow:hidden}\n.pp-card::before{content:\"\";position:absolute;inset:0 0 auto 0;width:auto;height:3px;opacity:1;border-radius:0;mix-blend-mode:normal;z-index:2;background:linear-gradient(90deg,var(--pp-yellow),#F7C55A);transform:scaleX(0);transform-origin:left;transition:transform .55s var(--pp-ease)}\n.pp-card:hover{transform:translateY(-6px);border-color:rgba(240,169,11,.6);box-shadow:0 2px 4px rgba(11,29,49,.05),0 30px 50px -24px rgba(11,29,49,.34)}\n.pp-card:hover::before{transform:scaleX(1)}\n.pp-dark .pp-card{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1);box-shadow:none}\n.pp-dark .pp-card:hover{background:rgba(255,255,255,.07);border-color:rgba(240,169,11,.45)}\n.pp-card h3,.pp-card .elementor-heading-title{letter-spacing:-.01em}\n\n.pp-step-num .elementor-heading-title{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:16px;background:var(--pp-navy);color:var(--pp-yellow)!important;font:700 17px/1 'Sora',sans-serif!important;letter-spacing:.04em;transition:transform .45s var(--pp-ease),background-color .45s,color .45s}\n.pp-card:hover .pp-step-num .elementor-heading-title{transform:rotate(-6deg) scale(1.06);background:var(--pp-yellow);color:var(--pp-navy)!important}\n\n/* Icon box */\n.pp-iconbox .elementor-icon-box-wrapper{text-align:left!important;display:block}\n.pp-iconbox .elementor-icon-box-icon{display:block!important;margin:0 0 20px!important;line-height:0}\n.pp-iconbox .elementor-icon{width:56px!important;height:56px!important;border-radius:16px;display:inline-flex!important;align-items:center;justify-content:center;font-size:22px!important;padding:0!important;background:rgba(6,105,233,.08)!important;color:var(--pp-blue)!important;transition:transform .45s var(--pp-ease),background-color .45s,color .45s}\n.pp-iconbox .elementor-icon i{width:auto;height:auto;color:inherit!important}\n.pp-iconbox .elementor-icon svg{width:22px;height:22px;fill:currentColor!important}\n.pp-iconbox .elementor-icon-box-title{margin:0 0 10px!important}\n.pp-iconbox .elementor-icon-box-description{margin:0!important}\n.pp-iconbox-row .elementor-icon-box-wrapper{display:flex!important;flex-direction:row!important;align-items:flex-start;gap:20px}\n.pp-iconbox-row .elementor-icon-box-icon{margin:0!important;flex:0 0 auto}\n.pp-iconbox-row .elementor-icon-box-content{flex:1;min-width:0}\n.pp-card.pp-iconbox:hover .elementor-icon{background:var(--pp-yellow)!important;color:var(--pp-navy)!important;transform:rotate(-6deg) scale(1.06)}\n@media(max-width:767px){.pp-iconbox-row .elementor-icon-box-wrapper{gap:16px}.pp-card{padding:26px 22px!important}}\n\n/* ---------- Listas (bullets) ---------- */\n.pp-check .elementor-icon-list-item{align-items:flex-start!important;padding:13px 0!important;margin:0!important;border-bottom:1px solid var(--pp-line)}\n.pp-check .elementor-icon-list-item:last-child{border-bottom:0}\n.pp-dark .pp-check .elementor-icon-list-item{border-color:rgba(255,255,255,.08)}\n.pp-check .elementor-icon-list-icon{flex:0 0 28px;width:28px;height:28px;border-radius:50%;background:var(--pp-yellow);display:inline-flex!important;align-items:center;justify-content:center;margin:0 14px 0 0!important;padding:0!important;transition:transform .4s var(--pp-ease),box-shadow .4s}\n.pp-check .elementor-icon-list-icon i{font-size:12px!important;width:auto!important;color:var(--pp-navy)!important}\n.pp-check .elementor-icon-list-icon svg{width:12px!important;height:12px!important;fill:var(--pp-navy)!important}\n.pp-check .elementor-icon-list-text{padding:2px 0 0!important;transition:transform .4s var(--pp-ease)}\n.pp-check .elementor-icon-list-item:hover .elementor-icon-list-icon{transform:scale(1.14) rotate(-10deg);box-shadow:0 0 0 6px rgba(240,169,11,.2)}\n.pp-check .elementor-icon-list-item:hover .elementor-icon-list-text{transform:translateX(4px)}\n\n/* Perguntas em cards */\n.pp-qcards .elementor-icon-list-items{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}\n.pp-qcards .elementor-icon-list-item{align-items:flex-start!important;margin:0!important;padding:22px 24px!important;background:#fff;border:1px solid var(--pp-line);border-radius:18px;box-shadow:0 12px 30px -22px rgba(11,29,49,.3)}\n.pp-qcards .elementor-icon-list-item:hover{transform:translateY(-5px);border-color:rgba(240,169,11,.65);box-shadow:0 26px 44px -26px rgba(11,29,49,.38)}\n.pp-qcards .elementor-icon-list-icon{flex:0 0 38px;width:38px;height:38px;border-radius:12px;background:var(--pp-navy);display:inline-flex!important;align-items:center;justify-content:center;margin:0 16px 0 0!important;padding:0!important;transition:transform .4s var(--pp-ease),background-color .4s}\n.pp-qcards .elementor-icon-list-icon i{font-size:15px!important;width:auto!important;color:var(--pp-yellow)!important}\n.pp-qcards .elementor-icon-list-icon svg{width:15px!important;height:15px!important;fill:var(--pp-yellow)!important}\n.pp-qcards .elementor-icon-list-item:hover .elementor-icon-list-icon{transform:rotate(-8deg);background:var(--pp-blue)}\n.pp-qcards .elementor-icon-list-text{padding-top:6px!important}\n.pp-qcards strong{color:var(--pp-navy)}\n@media(max-width:767px){.pp-qcards .elementor-icon-list-items{grid-template-columns:1fr;gap:12px}.pp-qcards .elementor-icon-list-item{padding:18px!important}}\n\n/* Pílulas */\n.pp-pills .elementor-icon-list-items{display:flex!important;flex-wrap:wrap;gap:10px;margin:0!important}\n.pp-pills .elementor-icon-list-item{margin:0!important;padding:9px 15px!important;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}\n.pp-pills .elementor-icon-list-item::after{display:none!important}\n.pp-pills .elementor-icon-list-icon i{color:var(--pp-yellow)!important;font-size:13px!important}\n.pp-pills .elementor-icon-list-icon svg{fill:var(--pp-yellow)!important;width:13px!important}\n.pp-pills-light .elementor-icon-list-item{background:rgba(11,29,49,.05);border-color:rgba(11,29,49,.08)}\n.pp-pills-light .elementor-icon-list-icon i{color:var(--pp-navy)!important}\n.pp-pills-light .elementor-icon-list-icon svg{fill:var(--pp-navy)!important}\n.pp-pills-center .elementor-icon-list-items{justify-content:center}\n\n/* ---------- Botões (CTA) ---------- */\n.pp-cta .elementor-button-wrapper{display:flex;justify-content:center}\n.pp-cta .elementor-button{position:relative;overflow:hidden;width:100%;max-width:470px;padding:21px 32px!important;border-radius:14px!important;background:linear-gradient(180deg,#F5B935 0%,#F0A90B 100%)!important;color:var(--pp-navy)!important;font-family:'Sora',sans-serif!important;font-weight:700!important;font-size:15px!important;letter-spacing:.06em;box-shadow:0 16px 36px -14px rgba(240,169,11,.75),inset 0 -2px 0 rgba(0,0,0,.08);transition:transform .35s var(--pp-ease),box-shadow .35s;animation:ppPulse 2.8s infinite}\n.pp-cta .elementor-button::after{content:\"\";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-20deg);animation:ppShine 4.5s 1.2s infinite;pointer-events:none}\n.pp-cta .elementor-button-text{white-space:normal;line-height:1.35}\n.pp-cta .elementor-button-text::after{content:\"\\00a0\\00a0\\2192\";position:relative;left:0;font-size:1.15em;line-height:0;transition:left .35s var(--pp-ease)}\n.pp-cta .elementor-button:hover{transform:translateY(-3px);animation:none;box-shadow:0 22px 44px -14px rgba(240,169,11,.9),inset 0 -2px 0 rgba(0,0,0,.08)}\n.pp-cta .elementor-button:hover .elementor-button-text::after{left:6px}\n.pp-hero .pp-cta .elementor-button-wrapper{justify-content:flex-start}\n@media(max-width:767px){\n  .pp-cta .elementor-button{max-width:none;padding:19px 14px!important;font-size:13px!important;letter-spacing:.02em}\n  .pp-wpp .elementor-button{padding:15px 16px!important;font-size:13px!important;letter-spacing:.02em}\n  .pp-hero .pp-cta .elementor-button-wrapper{justify-content:center}\n}\n.pp-wpp .elementor-button-wrapper{display:flex;justify-content:center}\n.pp-wpp .elementor-button{background:transparent!important;border:1px solid rgba(255,255,255,.28)!important;color:#fff!important;border-radius:14px!important;padding:16px 26px!important;font-family:'Sora',sans-serif!important;font-weight:600!important;font-size:14px!important;letter-spacing:.05em;transition:all .35s var(--pp-ease)}\n.pp-wpp .elementor-button-icon i{color:#25D366;font-size:18px;transition:color .35s}\n.pp-wpp .elementor-button-icon svg{fill:#25D366;width:18px;transition:fill .35s}\n.pp-wpp .elementor-button:hover{background:#25D366!important;border-color:#25D366!important;color:var(--pp-navy)!important;transform:translateY(-2px)}\n.pp-wpp .elementor-button:hover .elementor-button-icon i{color:var(--pp-navy)}\n.pp-wpp .elementor-button:hover .elementor-button-icon svg{fill:var(--pp-navy)}\n\n/* ---------- Seções ---------- */\n.pp-glow{background-image:radial-gradient(900px 420px at 50% -8%,rgba(6,105,233,.24),transparent 70%),radial-gradient(600px 360px at 100% 105%,rgba(6,105,233,.10),transparent 70%)!important}\n.pp-divider{width:100%;max-width:520px;height:1px;margin:8px auto!important;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent)}\n\n/* Hero */\n.pp-hero .elementor-heading-title{text-align:left!important;letter-spacing:-.025em;text-wrap:balance}\n.pp-hero .elementor-widget-text-editor{text-align:left}\n.pp-hero h1 span{background:linear-gradient(transparent 64%,rgba(240,169,11,.24) 64%) no-repeat;background-size:100% 100%;transition:background-size 1.2s .9s var(--pp-ease)}\n.pp-js .pp-hero .pp-stagger:not(.pp-in) h1 span{background-size:0 100%}\n.pp-hero-note p{margin:0}\n@media(max-width:767px){\n  .pp-hero .elementor-heading-title,.pp-hero .elementor-widget-text-editor{text-align:center!important}\n  .pp-hero .pp-pills .elementor-icon-list-items{justify-content:center}\n}\n\n/* Chat simulado */\n.pp-chat{max-width:470px;margin:0 auto;background:linear-gradient(180deg,#14304D 0%,#0F2238 100%);border:1px solid rgba(255,255,255,.1);border-radius:24px;overflow:hidden;font-family:'Sora',sans-serif;box-shadow:0 40px 70px -34px rgba(0,0,0,.7),0 0 0 6px rgba(255,255,255,.02)}\n.pp-chat-head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.08)}\n.pp-chat-avatar{flex:0 0 38px;height:38px;border-radius:12px;background:var(--pp-yellow);color:var(--pp-navy);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px}\n.pp-chat-name{color:#fff;font-size:14px;font-weight:600;line-height:1.3}\n.pp-chat-status{display:block;font-size:11px;font-weight:400;color:#8FE3B0}\n.pp-chat-status::before{content:\"\";display:inline-block;width:7px;height:7px;border-radius:50%;background:#2ECC71;margin-right:6px;vertical-align:1px;animation:ppBlink 1.6s infinite}\n.pp-chat-tag{margin-left:auto;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--pp-yellow);border:1px solid rgba(240,169,11,.35);padding:5px 9px;border-radius:999px}\n.pp-chat-body{display:flex;flex-direction:column;gap:12px;padding:22px 20px;min-height:330px}\n.pp-msg{max-width:86%;padding:12px 16px;border-radius:16px;font-size:14px;line-height:1.55}\n.pp-msg-ai{align-self:flex-start;background:rgba(255,255,255,.07);color:#E6ECF2;border-top-left-radius:4px}\n.pp-msg-me{align-self:flex-end;background:var(--pp-yellow);color:var(--pp-navy);border-top-right-radius:4px}\n.pp-typing{align-self:flex-start;display:flex;gap:5px;padding:15px 16px;background:rgba(255,255,255,.07);border-radius:16px;border-top-left-radius:4px}\n.pp-typing span{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.65);animation:ppDot 1.2s infinite}\n.pp-typing span:nth-child(2){animation-delay:.15s}.pp-typing span:nth-child(3){animation-delay:.3s}\n.pp-chat-foot{padding:12px 20px;border-top:1px solid rgba(255,255,255,.08);font-size:11px;color:rgba(255,255,255,.45);text-align:center;letter-spacing:.04em}\n.pp-chat-body>*{transition:opacity .6s var(--pp-ease),translate .6s var(--pp-ease)}\n.pp-chat-body>*:nth-child(1){transition-delay:.35s}.pp-chat-body>*:nth-child(2){transition-delay:1.5s}\n.pp-chat-body>*:nth-child(3){transition-delay:2.7s}.pp-chat-body>*:nth-child(4){transition-delay:3.6s}\n.pp-js .pp-chat-wrap:not(.pp-in) .pp-chat-body>*{opacity:0;translate:0 14px}\n\n/* Olga */\n.pp-photo{position:relative}\n.pp-photo{max-width:440px;margin-left:auto!important;margin-right:auto!important}\n.pp-photo::before{content:\"\";position:absolute;inset:9% -18px -18px 12%;border-radius:28px;background:linear-gradient(150deg,#F0A90B 0%,#F7C55A 100%);transition:transform .7s var(--pp-ease);z-index:0}\n.pp-photo:hover::before{transform:translate(-8px,-8px)}\n@media(max-width:767px){.pp-photo::before{inset:9% -10px -10px 12%}}\n.pp-photo img{position:relative;z-index:1;border-radius:24px}\n\n/* Oferta */\n.pp-offer{display:grid!important;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:0!important;width:100%;max-width:1000px;margin:0 auto!important;padding:0!important;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 50px 90px -40px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.06)}\n.pp-offer-list{padding:46px 44px!important}\n.pp-offer-price{padding:46px 38px!important;justify-content:center;text-align:center;background:linear-gradient(180deg,#FEF7E8 0%,#FBE4AE 100%)!important;border-left:1px dashed rgba(11,29,49,.16)}\n.pp-price .elementor-heading-title{font-size:68px!important;line-height:1!important;letter-spacing:-.04em;color:var(--pp-navy)!important}\n.pp-price-sub{display:block;margin-top:10px;font-size:15px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--pp-ink)}\n.pp-offer-price .pp-eyebrow{margin-bottom:-6px!important}\n.pp-dark .pp-offer-price .pp-eyebrow .elementor-heading-title{background:rgba(11,29,49,.08);color:var(--pp-navy)!important}\n.pp-dark .pp-offer .pp-text strong{color:var(--pp-navy)}\n.pp-dark .pp-offer .pp-check .elementor-icon-list-item{border-color:var(--pp-line)}\n.pp-offer-price .pp-cta .elementor-button{max-width:none;padding:20px 18px!important;font-size:14px!important;letter-spacing:.03em}\n@media(max-width:900px){.pp-offer{grid-template-columns:1fr}.pp-offer-price{border-left:0;border-top:1px dashed rgba(11,29,49,.16)}}\n@media(max-width:767px){.pp-offer{border-radius:22px}.pp-offer-list,.pp-offer-price{padding:30px 22px!important}.pp-price .elementor-heading-title{font-size:54px!important}}\n\n/* Garantia */\n.pp-guarantee{display:grid!important;grid-template-columns:200px minmax(0,1fr);gap:44px!important;align-items:center;width:100%;max-width:960px;margin:0 auto!important;padding:44px!important}\n.pp-guarantee .pp-cta .elementor-button-wrapper{justify-content:flex-start}\n.pp-float img{animation:ppFloat 6s ease-in-out infinite}\n.pp-card.pp-guarantee:hover{transform:none}\n@media(max-width:767px){\n  .pp-guarantee{grid-template-columns:1fr;gap:22px!important;padding:30px 22px!important;text-align:center}\n  .pp-guarantee .pp-title-left .elementor-heading-title{text-align:center}\n  .pp-guarantee .pp-title-left .elementor-heading-title::after{margin-left:auto}\n  .pp-guarantee .pp-float img{max-width:150px}\n  .pp-guarantee .pp-cta .elementor-button-wrapper{justify-content:center}\n}\n\n/* Depoimentos */\n.pp-frame{width:100%;max-width:780px;margin-left:auto!important;margin-right:auto!important}\n.pp-frame img{border-radius:18px}\n\n/* FAQ */\n.pp-faq{width:100%;max-width:860px;margin-left:auto!important;margin-right:auto!important}\n.pp-faq .elementor-toggle-item{background:#fff;border:1px solid var(--pp-line);border-radius:16px;margin:0 0 12px!important;overflow:hidden;box-shadow:0 1px 2px rgba(11,29,49,.04)}\n.pp-faq .elementor-toggle-item:hover{border-color:rgba(6,105,233,.28);box-shadow:0 16px 32px -22px rgba(11,29,49,.32)}\n.pp-faq .elementor-toggle-item:has(.elementor-active){border-color:rgba(240,169,11,.75);box-shadow:0 18px 36px -24px rgba(11,29,49,.35)}\n.pp-faq .elementor-tab-title{border:0!important;padding:20px 24px!important;cursor:pointer}\n.pp-faq .elementor-toggle-title{color:var(--pp-navy)!important;text-decoration:none!important}\n.pp-faq .elementor-toggle-icon{width:32px!important;height:32px!important;margin:-2px 0 0 16px!important;border-radius:50%;background:rgba(6,105,233,.08);display:inline-flex!important;align-items:center;justify-content:center;font-size:12px!important;line-height:1!important;transition:transform .45s var(--pp-ease),background-color .45s}\n.pp-faq .elementor-tab-title.elementor-active .elementor-toggle-icon{background:var(--pp-yellow);transform:rotate(180deg)}\n.pp-faq .elementor-tab-title.elementor-active .elementor-toggle-icon i{color:var(--pp-navy)!important}\n.pp-faq .elementor-tab-title.elementor-active .elementor-toggle-icon svg{fill:var(--pp-navy)!important}\n.pp-faq .elementor-tab-content{border:0!important;padding:0 24px 22px!important;color:var(--pp-ink)}\n.pp-faq .elementor-tab-content p{margin:0}\n\n/* ---------- Barra de progresso + CTA fixo ---------- */\n.pp-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:10000;pointer-events:none;background:linear-gradient(90deg,#F0A90B,#F7C55A);transform:scaleX(0);transform-origin:0 50%}\n.pp-sticky{position:fixed;left:0;right:0;bottom:0;z-index:9999;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:rgba(11,29,49,.93);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-top:1px solid rgba(255,255,255,.08);box-shadow:0 -14px 40px -20px rgba(0,0,0,.5);transform:translateY(110%);transition:transform .55s var(--pp-ease);font-family:'Sora',sans-serif}\n.pp-sticky.pp-show{transform:none}\n.pp-sticky-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px}\n.pp-sticky-txt{display:flex;flex-direction:column;line-height:1.35;color:#fff;min-width:0}\n.pp-sticky-txt strong{font-size:15px;font-weight:700}\n.pp-sticky-txt span{font-size:12px;color:rgba(255,255,255,.65)}\n.pp-sticky-btn{flex:0 0 auto;background:var(--pp-yellow);color:var(--pp-navy)!important;font-weight:700;font-size:13px;letter-spacing:.05em;padding:13px 20px;border-radius:12px;text-decoration:none!important;box-shadow:0 10px 26px -10px rgba(240,169,11,.7);transition:transform .3s var(--pp-ease)}\n.pp-sticky-btn:hover{transform:translateY(-2px)}\n@media(max-width:420px){.pp-sticky-txt span{display:none}.pp-sticky-btn{padding:12px 16px}}\n\n/* ---------- Keyframes ---------- */\n@keyframes ppPulse{0%{box-shadow:0 16px 36px -14px rgba(240,169,11,.75),0 0 0 0 rgba(240,169,11,.5)}70%{box-shadow:0 16px 36px -14px rgba(240,169,11,.75),0 0 0 16px rgba(240,169,11,0)}100%{box-shadow:0 16px 36px -14px rgba(240,169,11,.75),0 0 0 0 rgba(240,169,11,0)}}\n@keyframes ppShine{0%{left:-60%}22%,100%{left:130%}}\n@keyframes ppBlink{0%,100%{opacity:1}50%{opacity:.35}}\n@keyframes ppDot{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-5px);opacity:1}}\n@keyframes ppFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-10px) rotate(-3deg)}}\n@media (prefers-reduced-motion:reduce){\n  html{scroll-behavior:auto}\n  .pp-cta .elementor-button,.pp-cta .elementor-button::after,.pp-float img,.pp-typing span,.pp-eyebrow .elementor-heading-title::before{animation:none!important}\n}\n\n/* Primeira dobra: imagem mobile no topo + degradê para o texto */\n.pp-logo img{width:100%;max-width:300px;height:auto}\n@media(max-width:767px){\n  .pp-hero{background-color:#0B1D31!important;background-size:100% auto!important;background-position:top center!important}\n  .pp-hero.e-con::before,.pp-hero>.elementor-background-overlay{background-image:linear-gradient(180deg,rgba(11,29,49,0) 16%,rgba(11,29,49,.75) 28%,#0B1D31 40%)!important;opacity:1!important}\n  .pp-hero .pp-logo{margin-left:auto!important;margin-right:auto!important}\n  .pp-hero .pp-logo img{margin:0 auto}\n}\n</style>\n<script>\n(function(){\n  var d=document,root=d.documentElement,STEP=110;\n  if(d.body&&d.body.classList.contains('elementor-editor-active'))return;\n  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;\n  var canIO='IntersectionObserver' in window;\n  if(canIO&&!reduce)root.classList.add('pp-js');\n  function ready(fn){d.readyState!=='loading'?fn():d.addEventListener('DOMContentLoaded',fn);}\n  ready(function(){\n    /* 1. Revelação em cascata dos blocos e bullets */\n    d.querySelectorAll('.pp-stagger').forEach(function(g){\n      var items;\n      if(g.classList.contains('elementor-widget')){\n        items=g.querySelectorAll('.elementor-icon-list-item,.elementor-toggle-item');\n      }else{\n        var inner=g.querySelector(':scope > .e-con-inner')||g;\n        items=inner.children;\n      }\n      Array.prototype.forEach.call(items,function(el,i){\n        el.classList.add('pp-item');el.style.transitionDelay=(i*STEP)+'ms';\n      });\n      g._ppN=items.length;\n    });\n    if(root.classList.contains('pp-js')){\n      var io=new IntersectionObserver(function(es){\n        es.forEach(function(e){\n          if(!e.isIntersecting)return;\n          var t=e.target;t.classList.add('pp-in');io.unobserve(t);\n          if(t._ppN)setTimeout(function(){\n            t.querySelectorAll('.pp-item').forEach(function(el){el.style.transitionDelay='';});\n          },t._ppN*STEP+900);\n        });\n      },{threshold:0,rootMargin:'0px 0px -10% 0px'});\n      d.querySelectorAll('.pp-reveal,.pp-title,.pp-stagger').forEach(function(el){io.observe(el);});\n    }else{\n      d.querySelectorAll('.pp-reveal,.pp-title,.pp-stagger').forEach(function(el){el.classList.add('pp-in');});\n    }\n\n    /* 2. Barra de progresso de leitura */\n    var bar=d.createElement('div');bar.className='pp-progress';d.body.appendChild(bar);\n    var ticking=false;\n    function prog(){\n      var h=root.scrollHeight-innerHeight;\n      bar.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')';ticking=false;\n    }\n    addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(prog);}},{passive:true});\n    prog();\n\n    /* 3. CTA fixo: aparece quando nenhum botão de compra está visível */\n    if(!canIO)return;\n    var s=d.createElement('div');s.className='pp-sticky';s.setAttribute('role','region');s.setAttribute('aria-label','Acesso rápido à inscrição');\n    s.innerHTML='<div class=\"pp-sticky-in\"><div class=\"pp-sticky-txt\"><strong>Piloto Preparado</strong><span>Treinamento + Entrevistador IA incluso · 7 dias de garantia</span></div><a class=\"pp-sticky-btn\" href=\"#checkout\">QUERO ACESSO</a></div>';\n    d.body.appendChild(s);\n    var visible=new Set();\n    function upd(){s.classList.toggle('pp-show',scrollY>innerHeight*.6&&visible.size===0);}\n    var so=new IntersectionObserver(function(es){\n      es.forEach(function(e){e.isIntersecting?visible.add(e.target):visible.delete(e.target);});upd();\n    });\n    d.querySelectorAll('.pp-cta,.pp-hide-sticky,#checkout').forEach(function(el){so.observe(el);});\n    addEventListener('scroll',upd,{passive:true});\n  });\n})();\n</script>"
+            "html": "<!-- PILOTO PREPARADO: estilos e animações da página. Não apague este bloco. -->\n<style>\n/* ==========================================================\n   PILOTO PREPARADO — design system + animações\n   Tudo é controlado por classes CSS (Avançado > Classes CSS).\n   ========================================================== */\n:root{\n  --pp-navy:#0B1D31;--pp-navy-2:#132B45;--pp-yellow:#F0A90B;--pp-yellow-soft:#FDF0D3;\n  --pp-blue:#0669E9;--pp-ink:#3A4553;--pp-line:rgba(11,29,49,.09);\n  --pp-ease:cubic-bezier(.2,.7,.2,1);\n}\nhtml{scroll-behavior:smooth}\nbody{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}\n::selection{background:var(--pp-yellow);color:var(--pp-navy)}\n#checkout{scroll-margin-top:10px}\n.pp-assets{display:none!important}\n.elementor-editor-active .pp-assets{display:flex!important;min-height:40px}\n\n/* ---------- Revelação ao rolar ---------- */\n.pp-reveal,.pp-title{transition:opacity .9s var(--pp-ease),translate .9s var(--pp-ease)}\n.pp-js .pp-reveal:not(.pp-in),.pp-js .pp-title:not(.pp-in){opacity:0;translate:0 28px}\n.pp-item,.pp-card{transition:opacity .75s var(--pp-ease),translate .75s var(--pp-ease),transform .4s var(--pp-ease),box-shadow .4s var(--pp-ease),border-color .4s,background-color .4s}\n.pp-js .pp-stagger:not(.pp-in) .pp-item{opacity:0;translate:0 22px}\n\n/* ---------- Títulos ---------- */\n.pp-title .elementor-heading-title{letter-spacing:-.02em;text-wrap:balance}\n.pp-title .elementor-heading-title::after{content:\"\";display:block;width:56px;height:4px;border-radius:4px;background:var(--pp-yellow);margin:22px auto 0;transition:width 1s .35s var(--pp-ease)}\n.pp-js .pp-title:not(.pp-in) .elementor-heading-title::after{width:0}\n.pp-title-left .elementor-heading-title{text-align:left}\n.pp-title-left .elementor-heading-title::after{margin-left:0}\n\n.pp-eyebrow{text-align:center;margin-bottom:-14px!important}\n.pp-eyebrow.pp-left{text-align:left}\n.pp-eyebrow .elementor-heading-title{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:rgba(11,29,49,.06);color:var(--pp-navy)!important;font:600 12px/1 'Sora',sans-serif!important;letter-spacing:.16em;text-transform:uppercase}\n.pp-eyebrow .elementor-heading-title::before{content:\"\";width:6px;height:6px;border-radius:50%;background:var(--pp-yellow);box-shadow:0 0 0 4px rgba(240,169,11,.28);animation:ppBlink 2.4s infinite}\n.pp-dark .pp-eyebrow .elementor-heading-title{background:rgba(240,169,11,.1);color:var(--pp-yellow)!important}\n\n/* ---------- Textos ---------- */\n.pp-narrow{width:100%;max-width:760px;margin-left:auto!important;margin-right:auto!important}\n.pp-center,.pp-center p{text-align:center}\n.pp-text p{margin:0 0 1em}.pp-text p:last-child{margin-bottom:0}\n.pp-text strong{color:var(--pp-navy)}\n.pp-dark .pp-text strong{color:#fff}\n.pp-muted{opacity:.75}\n.pp-emphasis p{font-size:1.06em;text-align:center}\n.pp-emphasis strong{background:linear-gradient(transparent 60%,rgba(240,169,11,.45) 60%);padding:0 2px}\n.pp-quote p:last-child{margin-top:30px;padding:26px 30px;border-radius:20px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-top:3px solid var(--pp-yellow);color:#fff}\n.pp-tagline p{margin:0;padding:6px 0 6px 18px;border-left:3px solid var(--pp-yellow);font-weight:600;color:#fff}\n.pp-signature p:last-child{margin-top:24px;padding:20px 24px;border-left:4px solid var(--pp-yellow);border-radius:0 16px 16px 0;background:var(--pp-yellow-soft)}\n.pp-signature p:last-child strong{color:var(--pp-navy)}\n.pp-note{width:100%;max-width:860px;margin-left:auto!important;margin-right:auto!important;background:#fff;border:1px solid var(--pp-line);border-left:4px solid var(--pp-yellow);border-radius:14px;padding:18px 24px!important}\n.pp-note p{margin:0}\n\n/* ---------- Grades ---------- */\n.pp-grid{display:grid!important;gap:22px!important;padding:0!important;width:100%}\n.pp-grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}\n.pp-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}\n.pp-grid-3>.elementor-element:last-child:nth-child(3n+1){grid-column:1/-1}\n.pp-split{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px!important;align-items:center;padding:0!important;width:100%}\n.pp-split-olga{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}\n.pp-grid>.elementor-element,.pp-split>.elementor-element,.pp-offer>.elementor-element{width:auto!important;max-width:none!important;margin:0!important}\n@media(max-width:1024px){\n  .pp-grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}\n  .pp-grid-3>.elementor-element:last-child:nth-child(3n+1){grid-column:auto}\n  .pp-grid-3>.elementor-element:last-child:nth-child(odd){grid-column:1/-1}\n}\n@media(max-width:900px){.pp-split{grid-template-columns:1fr;gap:36px!important}}\n@media(max-width:767px){.pp-grid-2,.pp-grid-3{grid-template-columns:1fr}.pp-grid{gap:16px!important}}\n\n/* ---------- Cards ---------- */\n.pp-card{position:relative;background:#fff;border:1px solid var(--pp-line);border-radius:20px;padding:32px 28px!important;box-shadow:0 1px 2px rgba(11,29,49,.04),0 14px 34px -20px rgba(11,29,49,.2);overflow:hidden}\n.pp-card::before{content:\"\";position:absolute;inset:0 0 auto 0;width:auto;height:3px;opacity:1;border-radius:0;mix-blend-mode:normal;z-index:2;background:linear-gradient(90deg,var(--pp-yellow),#F7C55A);transform:scaleX(0);transform-origin:left;transition:transform .55s var(--pp-ease)}\n.pp-card:hover{transform:translateY(-6px);border-color:rgba(240,169,11,.6);box-shadow:0 2px 4px rgba(11,29,49,.05),0 30px 50px -24px rgba(11,29,49,.34)}\n.pp-card:hover::before{transform:scaleX(1)}\n.pp-dark .pp-card{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1);box-shadow:none}\n.pp-dark .pp-card:hover{background:rgba(255,255,255,.07);border-color:rgba(240,169,11,.45)}\n.pp-card h3,.pp-card .elementor-heading-title{letter-spacing:-.01em}\n\n.pp-step-num .elementor-heading-title{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:16px;background:var(--pp-navy);color:var(--pp-yellow)!important;font:700 17px/1 'Sora',sans-serif!important;letter-spacing:.04em;transition:transform .45s var(--pp-ease),background-color .45s,color .45s}\n.pp-card:hover .pp-step-num .elementor-heading-title{transform:rotate(-6deg) scale(1.06);background:var(--pp-yellow);color:var(--pp-navy)!important}\n\n/* Icon box */\n.pp-iconbox .elementor-icon-box-wrapper{text-align:left!important;display:block}\n.pp-iconbox .elementor-icon-box-icon{display:block!important;margin:0 0 20px!important;line-height:0}\n.pp-iconbox .elementor-icon{width:56px!important;height:56px!important;border-radius:16px;display:inline-flex!important;align-items:center;justify-content:center;font-size:22px!important;padding:0!important;background:rgba(6,105,233,.08)!important;color:var(--pp-blue)!important;transition:transform .45s var(--pp-ease),background-color .45s,color .45s}\n.pp-iconbox .elementor-icon i{width:auto;height:auto;color:inherit!important}\n.pp-iconbox .elementor-icon svg{width:22px;height:22px;fill:currentColor!important}\n.pp-iconbox .elementor-icon-box-title{margin:0 0 10px!important}\n.pp-iconbox .elementor-icon-box-description{margin:0!important}\n.pp-iconbox-row .elementor-icon-box-wrapper{display:flex!important;flex-direction:row!important;align-items:flex-start;gap:20px}\n.pp-iconbox-row .elementor-icon-box-icon{margin:0!important;flex:0 0 auto}\n.pp-iconbox-row .elementor-icon-box-content{flex:1;min-width:0}\n.pp-card.pp-iconbox:hover .elementor-icon{background:var(--pp-yellow)!important;color:var(--pp-navy)!important;transform:rotate(-6deg) scale(1.06)}\n@media(max-width:767px){.pp-iconbox-row .elementor-icon-box-wrapper{gap:16px}.pp-card{padding:26px 22px!important}}\n\n/* ---------- Listas (bullets) ---------- */\n.pp-check .elementor-icon-list-item{align-items:flex-start!important;padding:13px 0!important;margin:0!important;border-bottom:1px solid var(--pp-line)}\n.pp-check .elementor-icon-list-item:last-child{border-bottom:0}\n.pp-dark .pp-check .elementor-icon-list-item{border-color:rgba(255,255,255,.08)}\n.pp-check .elementor-icon-list-icon{flex:0 0 28px;width:28px;height:28px;border-radius:50%;background:var(--pp-yellow);display:inline-flex!important;align-items:center;justify-content:center;margin:0 14px 0 0!important;padding:0!important;transition:transform .4s var(--pp-ease),box-shadow .4s}\n.pp-check .elementor-icon-list-icon i{font-size:12px!important;width:auto!important;color:var(--pp-navy)!important}\n.pp-check .elementor-icon-list-icon svg{width:12px!important;height:12px!important;fill:var(--pp-navy)!important}\n.pp-check .elementor-icon-list-text{padding:2px 0 0!important;transition:transform .4s var(--pp-ease)}\n.pp-check .elementor-icon-list-item:hover .elementor-icon-list-icon{transform:scale(1.14) rotate(-10deg);box-shadow:0 0 0 6px rgba(240,169,11,.2)}\n.pp-check .elementor-icon-list-item:hover .elementor-icon-list-text{transform:translateX(4px)}\n\n/* Perguntas em cards */\n.pp-qcards .elementor-icon-list-items{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}\n.pp-qcards .elementor-icon-list-item{align-items:flex-start!important;margin:0!important;padding:22px 24px!important;background:#fff;border:1px solid var(--pp-line);border-radius:18px;box-shadow:0 12px 30px -22px rgba(11,29,49,.3)}\n.pp-qcards .elementor-icon-list-item:hover{transform:translateY(-5px);border-color:rgba(240,169,11,.65);box-shadow:0 26px 44px -26px rgba(11,29,49,.38)}\n.pp-qcards .elementor-icon-list-icon{flex:0 0 38px;width:38px;height:38px;border-radius:12px;background:var(--pp-navy);display:inline-flex!important;align-items:center;justify-content:center;margin:0 16px 0 0!important;padding:0!important;transition:transform .4s var(--pp-ease),background-color .4s}\n.pp-qcards .elementor-icon-list-icon i{font-size:15px!important;width:auto!important;color:var(--pp-yellow)!important}\n.pp-qcards .elementor-icon-list-icon svg{width:15px!important;height:15px!important;fill:var(--pp-yellow)!important}\n.pp-qcards .elementor-icon-list-item:hover .elementor-icon-list-icon{transform:rotate(-8deg);background:var(--pp-blue)}\n.pp-qcards .elementor-icon-list-text{padding-top:6px!important}\n.pp-qcards strong{color:var(--pp-navy)}\n@media(max-width:767px){.pp-qcards .elementor-icon-list-items{grid-template-columns:1fr;gap:12px}.pp-qcards .elementor-icon-list-item{padding:18px!important}}\n\n/* Pílulas */\n.pp-pills .elementor-icon-list-items{display:flex!important;flex-wrap:wrap;gap:10px;margin:0!important}\n.pp-pills .elementor-icon-list-item{margin:0!important;padding:9px 15px!important;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}\n.pp-pills .elementor-icon-list-item::after{display:none!important}\n.pp-pills .elementor-icon-list-icon i{color:var(--pp-yellow)!important;font-size:13px!important}\n.pp-pills .elementor-icon-list-icon svg{fill:var(--pp-yellow)!important;width:13px!important}\n.pp-pills-light .elementor-icon-list-item{background:rgba(11,29,49,.05);border-color:rgba(11,29,49,.08)}\n.pp-pills-light .elementor-icon-list-icon i{color:var(--pp-navy)!important}\n.pp-pills-light .elementor-icon-list-icon svg{fill:var(--pp-navy)!important}\n.pp-pills-center .elementor-icon-list-items{justify-content:center}\n\n/* ---------- Botões (CTA) ---------- */\n.pp-cta .elementor-button-wrapper{display:flex;justify-content:center}\n.pp-cta .elementor-button{position:relative;overflow:hidden;width:100%;max-width:470px;padding:21px 32px!important;border-radius:14px!important;background:linear-gradient(180deg,#F5B935 0%,#F0A90B 100%)!important;color:var(--pp-navy)!important;font-family:'Sora',sans-serif!important;font-weight:700!important;font-size:15px!important;letter-spacing:.06em;box-shadow:0 16px 36px -14px rgba(240,169,11,.75),inset 0 -2px 0 rgba(0,0,0,.08);transition:transform .35s var(--pp-ease),box-shadow .35s;animation:ppPulse 2.8s infinite}\n.pp-cta .elementor-button::after{content:\"\";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-20deg);animation:ppShine 4.5s 1.2s infinite;pointer-events:none}\n.pp-cta .elementor-button-text{white-space:normal;line-height:1.35}\n.pp-cta .elementor-button-text::after{content:\"\\00a0\\00a0\\2192\";position:relative;left:0;font-size:1.15em;line-height:0;transition:left .35s var(--pp-ease)}\n.pp-cta .elementor-button:hover{transform:translateY(-3px);animation:none;box-shadow:0 22px 44px -14px rgba(240,169,11,.9),inset 0 -2px 0 rgba(0,0,0,.08)}\n.pp-cta .elementor-button:hover .elementor-button-text::after{left:6px}\n.pp-hero .pp-cta .elementor-button-wrapper{justify-content:flex-start}\n@media(max-width:767px){\n  .pp-cta .elementor-button{max-width:none;padding:19px 14px!important;font-size:13px!important;letter-spacing:.02em}\n  .pp-wpp .elementor-button{padding:15px 16px!important;font-size:13px!important;letter-spacing:.02em}\n  .pp-hero .pp-cta .elementor-button-wrapper{justify-content:center}\n}\n.pp-wpp .elementor-button-wrapper{display:flex;justify-content:center}\n.pp-wpp .elementor-button{background:transparent!important;border:1px solid rgba(255,255,255,.28)!important;color:#fff!important;border-radius:14px!important;padding:16px 26px!important;font-family:'Sora',sans-serif!important;font-weight:600!important;font-size:14px!important;letter-spacing:.05em;transition:all .35s var(--pp-ease)}\n.pp-wpp .elementor-button-icon i{color:#25D366;font-size:18px;transition:color .35s}\n.pp-wpp .elementor-button-icon svg{fill:#25D366;width:18px;transition:fill .35s}\n.pp-wpp .elementor-button:hover{background:#25D366!important;border-color:#25D366!important;color:var(--pp-navy)!important;transform:translateY(-2px)}\n.pp-wpp .elementor-button:hover .elementor-button-icon i{color:var(--pp-navy)}\n.pp-wpp .elementor-button:hover .elementor-button-icon svg{fill:var(--pp-navy)}\n\n/* ---------- Seções ---------- */\n.pp-glow{background-image:radial-gradient(900px 420px at 50% -8%,rgba(6,105,233,.24),transparent 70%),radial-gradient(600px 360px at 100% 105%,rgba(6,105,233,.10),transparent 70%)!important}\n.pp-divider{width:100%;max-width:520px;height:1px;margin:8px auto!important;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent)}\n\n/* Hero */\n.pp-hero .elementor-heading-title{text-align:left!important;letter-spacing:-.025em;text-wrap:balance}\n.pp-hero .elementor-widget-text-editor{text-align:left}\n.pp-hero h1 span{background:linear-gradient(transparent 64%,rgba(240,169,11,.24) 64%) no-repeat;background-size:100% 100%;transition:background-size 1.2s .9s var(--pp-ease)}\n.pp-js .pp-hero .pp-stagger:not(.pp-in) h1 span{background-size:0 100%}\n.pp-hero-note p{margin:0}\n@media(max-width:767px){\n  .pp-hero .elementor-heading-title,.pp-hero .elementor-widget-text-editor{text-align:center!important}\n  .pp-hero .pp-pills .elementor-icon-list-items{justify-content:center}\n}\n\n/* Chat simulado */\n.pp-chat{max-width:470px;margin:0 auto;background:linear-gradient(180deg,#14304D 0%,#0F2238 100%);border:1px solid rgba(255,255,255,.1);border-radius:24px;overflow:hidden;font-family:'Sora',sans-serif;box-shadow:0 40px 70px -34px rgba(0,0,0,.7),0 0 0 6px rgba(255,255,255,.02)}\n.pp-chat-head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.08)}\n.pp-chat-avatar{flex:0 0 38px;height:38px;border-radius:12px;background:var(--pp-yellow);color:var(--pp-navy);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px}\n.pp-chat-name{color:#fff;font-size:14px;font-weight:600;line-height:1.3}\n.pp-chat-status{display:block;font-size:11px;font-weight:400;color:#8FE3B0}\n.pp-chat-status::before{content:\"\";display:inline-block;width:7px;height:7px;border-radius:50%;background:#2ECC71;margin-right:6px;vertical-align:1px;animation:ppBlink 1.6s infinite}\n.pp-chat-tag{margin-left:auto;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--pp-yellow);border:1px solid rgba(240,169,11,.35);padding:5px 9px;border-radius:999px}\n.pp-chat-body{display:flex;flex-direction:column;gap:12px;padding:22px 20px;min-height:330px}\n.pp-msg{max-width:86%;padding:12px 16px;border-radius:16px;font-size:14px;line-height:1.55}\n.pp-msg-ai{align-self:flex-start;background:rgba(255,255,255,.07);color:#E6ECF2;border-top-left-radius:4px}\n.pp-msg-me{align-self:flex-end;background:var(--pp-yellow);color:var(--pp-navy);border-top-right-radius:4px}\n.pp-typing{align-self:flex-start;display:flex;gap:5px;padding:15px 16px;background:rgba(255,255,255,.07);border-radius:16px;border-top-left-radius:4px}\n.pp-typing span{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.65);animation:ppDot 1.2s infinite}\n.pp-typing span:nth-child(2){animation-delay:.15s}.pp-typing span:nth-child(3){animation-delay:.3s}\n.pp-chat-foot{padding:12px 20px;border-top:1px solid rgba(255,255,255,.08);font-size:11px;color:rgba(255,255,255,.45);text-align:center;letter-spacing:.04em}\n.pp-chat-body>*{transition:opacity .6s var(--pp-ease),translate .6s var(--pp-ease)}\n.pp-chat-body>*:nth-child(1){transition-delay:.35s}.pp-chat-body>*:nth-child(2){transition-delay:1.5s}\n.pp-chat-body>*:nth-child(3){transition-delay:2.7s}.pp-chat-body>*:nth-child(4){transition-delay:3.6s}\n.pp-js .pp-chat-wrap:not(.pp-in) .pp-chat-body>*{opacity:0;translate:0 14px}\n\n/* Olga */\n.pp-photo{position:relative}\n.pp-photo{max-width:440px;margin-left:auto!important;margin-right:auto!important}\n.pp-photo::before{content:\"\";position:absolute;inset:9% -18px -18px 12%;border-radius:28px;background:linear-gradient(150deg,#F0A90B 0%,#F7C55A 100%);transition:transform .7s var(--pp-ease);z-index:0}\n.pp-photo:hover::before{transform:translate(-8px,-8px)}\n@media(max-width:767px){.pp-photo::before{inset:9% -10px -10px 12%}}\n.pp-photo img{position:relative;z-index:1;border-radius:24px}\n\n/* Oferta */\n.pp-offer{display:grid!important;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:0!important;width:100%;max-width:1000px;margin:0 auto!important;padding:0!important;background:#fff;border-radius:28px;overflow:hidden;box-shadow:0 50px 90px -40px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.06)}\n.pp-offer-list{padding:46px 44px!important}\n.pp-offer-price{padding:46px 38px!important;justify-content:center;text-align:center;background:linear-gradient(180deg,#FEF7E8 0%,#FBE4AE 100%)!important;border-left:1px dashed rgba(11,29,49,.16)}\n.pp-price .elementor-heading-title{font-size:68px!important;line-height:1!important;letter-spacing:-.04em;color:var(--pp-navy)!important}\n.pp-price-sub{display:block;margin-top:10px;font-size:15px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--pp-ink)}\n.pp-offer-price .pp-eyebrow{margin-bottom:-6px!important}\n.pp-dark .pp-offer-price .pp-eyebrow .elementor-heading-title{background:rgba(11,29,49,.08);color:var(--pp-navy)!important}\n.pp-dark .pp-offer .pp-text strong{color:var(--pp-navy)}\n.pp-dark .pp-offer .pp-check .elementor-icon-list-item{border-color:var(--pp-line)}\n.pp-offer-price .pp-cta .elementor-button{max-width:none;padding:20px 18px!important;font-size:14px!important;letter-spacing:.03em}\n@media(max-width:900px){.pp-offer{grid-template-columns:1fr}.pp-offer-price{border-left:0;border-top:1px dashed rgba(11,29,49,.16)}}\n@media(max-width:767px){.pp-offer{border-radius:22px}.pp-offer-list,.pp-offer-price{padding:30px 22px!important}.pp-price .elementor-heading-title{font-size:54px!important}}\n\n/* Garantia */\n.pp-guarantee{display:grid!important;grid-template-columns:200px minmax(0,1fr);gap:44px!important;align-items:center;width:100%;max-width:960px;margin:0 auto!important;padding:44px!important}\n.pp-guarantee .pp-cta .elementor-button-wrapper{justify-content:flex-start}\n.pp-float img{animation:ppFloat 6s ease-in-out infinite}\n.pp-card.pp-guarantee:hover{transform:none}\n@media(max-width:767px){\n  .pp-guarantee{grid-template-columns:1fr;gap:22px!important;padding:30px 22px!important;text-align:center}\n  .pp-guarantee .pp-title-left .elementor-heading-title{text-align:center}\n  .pp-guarantee .pp-title-left .elementor-heading-title::after{margin-left:auto}\n  .pp-guarantee .pp-float img{max-width:150px}\n  .pp-guarantee .pp-cta .elementor-button-wrapper{justify-content:center}\n}\n\n/* Depoimentos */\n.pp-frame{width:100%;max-width:780px;margin-left:auto!important;margin-right:auto!important}\n.pp-frame img{border-radius:18px}\n\n/* FAQ */\n.pp-faq{width:100%;max-width:860px;margin-left:auto!important;margin-right:auto!important}\n.pp-faq .elementor-toggle-item{background:#fff;border:1px solid var(--pp-line);border-radius:16px;margin:0 0 12px!important;overflow:hidden;box-shadow:0 1px 2px rgba(11,29,49,.04)}\n.pp-faq .elementor-toggle-item:hover{border-color:rgba(6,105,233,.28);box-shadow:0 16px 32px -22px rgba(11,29,49,.32)}\n.pp-faq .elementor-toggle-item:has(.elementor-active){border-color:rgba(240,169,11,.75);box-shadow:0 18px 36px -24px rgba(11,29,49,.35)}\n.pp-faq .elementor-tab-title{border:0!important;padding:20px 24px!important;cursor:pointer}\n.pp-faq .elementor-toggle-title{color:var(--pp-navy)!important;text-decoration:none!important}\n.pp-faq .elementor-toggle-icon{width:32px!important;height:32px!important;margin:-2px 0 0 16px!important;border-radius:50%;background:rgba(6,105,233,.08);display:inline-flex!important;align-items:center;justify-content:center;font-size:12px!important;line-height:1!important;transition:transform .45s var(--pp-ease),background-color .45s}\n.pp-faq .elementor-tab-title.elementor-active .elementor-toggle-icon{background:var(--pp-yellow);transform:rotate(180deg)}\n.pp-faq .elementor-tab-title.elementor-active .elementor-toggle-icon i{color:var(--pp-navy)!important}\n.pp-faq .elementor-tab-title.elementor-active .elementor-toggle-icon svg{fill:var(--pp-navy)!important}\n.pp-faq .elementor-tab-content{border:0!important;padding:0 24px 22px!important;color:var(--pp-ink)}\n.pp-faq .elementor-tab-content p{margin:0}\n\n/* ---------- Barra de progresso + CTA fixo ---------- */\n.pp-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:10000;pointer-events:none;background:linear-gradient(90deg,#F0A90B,#F7C55A);transform:scaleX(0);transform-origin:0 50%}\n.pp-sticky{position:fixed;left:0;right:0;bottom:0;z-index:9999;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:rgba(11,29,49,.93);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-top:1px solid rgba(255,255,255,.08);box-shadow:0 -14px 40px -20px rgba(0,0,0,.5);transform:translateY(110%);transition:transform .55s var(--pp-ease);font-family:'Sora',sans-serif}\n.pp-sticky.pp-show{transform:none}\n.pp-sticky-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px}\n.pp-sticky-txt{display:flex;flex-direction:column;line-height:1.35;color:#fff;min-width:0}\n.pp-sticky-txt strong{font-size:15px;font-weight:700}\n.pp-sticky-txt span{font-size:12px;color:rgba(255,255,255,.65)}\n.pp-sticky-btn{flex:0 0 auto;background:var(--pp-yellow);color:var(--pp-navy)!important;font-weight:700;font-size:13px;letter-spacing:.05em;padding:13px 20px;border-radius:12px;text-decoration:none!important;box-shadow:0 10px 26px -10px rgba(240,169,11,.7);transition:transform .3s var(--pp-ease)}\n.pp-sticky-btn:hover{transform:translateY(-2px)}\n@media(max-width:420px){.pp-sticky-txt span{display:none}.pp-sticky-btn{padding:12px 16px}}\n\n/* ---------- Keyframes ---------- */\n@keyframes ppPulse{0%{box-shadow:0 16px 36px -14px rgba(240,169,11,.75),0 0 0 0 rgba(240,169,11,.5)}70%{box-shadow:0 16px 36px -14px rgba(240,169,11,.75),0 0 0 16px rgba(240,169,11,0)}100%{box-shadow:0 16px 36px -14px rgba(240,169,11,.75),0 0 0 0 rgba(240,169,11,0)}}\n@keyframes ppShine{0%{left:-60%}22%,100%{left:130%}}\n@keyframes ppBlink{0%,100%{opacity:1}50%{opacity:.35}}\n@keyframes ppDot{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-5px);opacity:1}}\n@keyframes ppFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-10px) rotate(-3deg)}}\n@media (prefers-reduced-motion:reduce){\n  html{scroll-behavior:auto}\n  .pp-cta .elementor-button,.pp-cta .elementor-button::after,.pp-float img,.pp-typing span,.pp-eyebrow .elementor-heading-title::before{animation:none!important}\n}\n\n/* Primeira dobra: imagem mobile no topo + degradê para o texto */\n.pp-logo img{width:100%;max-width:300px;height:auto}\n@media(max-width:767px){\n  .pp-hero{background-color:#0B1D31!important;background-size:100% auto!important;background-position:top center!important}\n  .pp-hero.e-con::before,.pp-hero>.elementor-background-overlay{background-image:linear-gradient(180deg,rgba(11,29,49,0) 16%,rgba(11,29,49,.75) 28%,#0B1D31 40%)!important;opacity:1!important}\n  .pp-hero .pp-logo{margin-left:auto!important;margin-right:auto!important}\n  .pp-hero .pp-logo img{margin:0 auto}\n}\n\n/* Mês do Aviador */\n.pp-promo .elementor-heading-title{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(240,169,11,.14);border:1px solid rgba(240,169,11,.45);color:var(--pp-yellow)!important;letter-spacing:.04em}\n.pp-promo .elementor-heading-title::before{content:\"\\2708\";font-size:14px;line-height:1}\n@media(max-width:767px){.pp-hero .pp-promo .elementor-heading-title{text-align:center}}\n.pp-dark .pp-offer-price .pp-eyebrow-promo .elementor-heading-title{background:var(--pp-navy);color:var(--pp-yellow)!important}\n.pp-offer-price .pp-eyebrow-promo .elementor-heading-title::before{background:var(--pp-yellow)}\n.pp-old-price .elementor-heading-title{color:var(--pp-ink)!important}\n.pp-old-price s{text-decoration-thickness:2px;text-decoration-color:rgba(200,40,40,.75)}\n.pp-save{display:inline-block;margin-left:6px;padding:3px 9px;border-radius:999px;background:#E3F6EA;color:#17733F;font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;vertical-align:1px}\n.pp-price-por{display:block;margin-bottom:6px;font-size:15px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--pp-ink)}\n.pp-installments .elementor-heading-title{margin-top:-6px}\n.pp-installments strong{font-weight:800}\n.pp-countdown{display:none;flex-direction:column;align-items:center;gap:10px;padding:14px 12px;border-radius:16px;background:rgba(11,29,49,.06)}\n.pp-countdown.pp-cd-on{display:flex}\n.pp-cd-label{font:600 11px/1 'Sora',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--pp-ink)}\n.pp-cd-grid{display:flex;gap:8px}\n.pp-cd-grid>div{min-width:56px;padding:8px 6px;border-radius:12px;background:var(--pp-navy);text-align:center;font-family:'Sora',sans-serif}\n.pp-cd-grid b{display:block;color:var(--pp-yellow);font-size:22px;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums}\n.pp-cd-grid small{display:block;margin-top:3px;color:rgba(255,255,255,.7);font-size:10px;letter-spacing:.08em;text-transform:uppercase}\n@media(max-width:767px){.pp-cd-grid>div{min-width:52px}.pp-cd-grid b{font-size:20px}}\n</style>\n<script>\n(function(){\n  var d=document,root=d.documentElement,STEP=110;\n  if(d.body&&d.body.classList.contains('elementor-editor-active'))return;\n  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;\n  var canIO='IntersectionObserver' in window;\n  if(canIO&&!reduce)root.classList.add('pp-js');\n  function ready(fn){d.readyState!=='loading'?fn():d.addEventListener('DOMContentLoaded',fn);}\n  ready(function(){\n    /* 1. Revelação em cascata dos blocos e bullets */\n    d.querySelectorAll('.pp-stagger').forEach(function(g){\n      var items;\n      if(g.classList.contains('elementor-widget')){\n        items=g.querySelectorAll('.elementor-icon-list-item,.elementor-toggle-item');\n      }else{\n        var inner=g.querySelector(':scope > .e-con-inner')||g;\n        items=inner.children;\n      }\n      Array.prototype.forEach.call(items,function(el,i){\n        el.classList.add('pp-item');el.style.transitionDelay=(i*STEP)+'ms';\n      });\n      g._ppN=items.length;\n    });\n    if(root.classList.contains('pp-js')){\n      var io=new IntersectionObserver(function(es){\n        es.forEach(function(e){\n          if(!e.isIntersecting)return;\n          var t=e.target;t.classList.add('pp-in');io.unobserve(t);\n          if(t._ppN)setTimeout(function(){\n            t.querySelectorAll('.pp-item').forEach(function(el){el.style.transitionDelay='';});\n          },t._ppN*STEP+900);\n        });\n      },{threshold:0,rootMargin:'0px 0px -10% 0px'});\n      d.querySelectorAll('.pp-reveal,.pp-title,.pp-stagger').forEach(function(el){io.observe(el);});\n    }else{\n      d.querySelectorAll('.pp-reveal,.pp-title,.pp-stagger').forEach(function(el){el.classList.add('pp-in');});\n    }\n\n    /* 2. Barra de progresso de leitura */\n    var bar=d.createElement('div');bar.className='pp-progress';d.body.appendChild(bar);\n    var ticking=false;\n    function prog(){\n      var h=root.scrollHeight-innerHeight;\n      bar.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')';ticking=false;\n    }\n    addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(prog);}},{passive:true});\n    prog();\n\n    /* 3. Contagem regressiva da condição especial */\n    d.querySelectorAll('.pp-countdown').forEach(function(c){\n      var end=new Date(c.getAttribute('data-end')).getTime(),u={};\n      c.querySelectorAll('[data-u]').forEach(function(b){u[b.getAttribute('data-u')]=b;});\n      function p(n){return (n<10?'0':'')+n;}\n      function tick(){\n        var t=Math.floor((end-Date.now())/1000);\n        if(isNaN(t)||t<=0){c.classList.remove('pp-cd-on');return false;}\n        u.d.textContent=p(Math.floor(t/86400));u.h.textContent=p(Math.floor(t%86400/3600));\n        u.m.textContent=p(Math.floor(t%3600/60));u.s.textContent=p(t%60);\n        c.classList.add('pp-cd-on');return true;\n      }\n      if(tick()){var iv=setInterval(function(){if(!tick())clearInterval(iv);},1000);}\n    });\n\n    /* 4. CTA fixo: aparece quando nenhum botão de compra está visível */\n    if(!canIO)return;\n    var s=d.createElement('div');s.className='pp-sticky';s.setAttribute('role','region');s.setAttribute('aria-label','Acesso rápido à inscrição');\n    s.innerHTML='<div class=\"pp-sticky-in\"><div class=\"pp-sticky-txt\"><strong>Mês do Aviador: R$ 597</strong><span>ou 12x de R$ 61,74 · válido até 31/10</span></div><a class=\"pp-sticky-btn\" href=\"#checkout\">QUERO ACESSO</a></div>';\n    d.body.appendChild(s);\n    var visible=new Set();\n    function upd(){s.classList.toggle('pp-show',scrollY>innerHeight*.6&&visible.size===0);}\n    var so=new IntersectionObserver(function(es){\n      es.forEach(function(e){e.isIntersecting?visible.add(e.target):visible.delete(e.target);});upd();\n    });\n    d.querySelectorAll('.pp-cta,.pp-hide-sticky,#checkout').forEach(function(el){so.observe(el);});\n    addEventListener('scroll',upd,{passive:true});\n  });\n})();\n</script>"
           },
           "elements": []
         }
       ]
     },
     {
-      "id": "c2ef746e",
+      "id": "4698646c",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -138,7 +138,7 @@
       },
       "elements": [
         {
-          "id": "2ee70646",
+          "id": "c2ef746e",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -224,6 +224,43 @@
               "isInner": false,
               "widgetType": "heading",
               "settings": {
+                "title": "Mês do Aviador · condição especial até 31/10",
+                "header_size": "div",
+                "title_color": "#F0A90B",
+                "typography_typography": "custom",
+                "typography_font_family": "Sora",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13,
+                  "sizes": []
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 12,
+                  "sizes": []
+                },
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.3,
+                  "sizes": []
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 32,
+                  "sizes": []
+                },
+                "typography_font_weight": "600",
+                "align": "left",
+                "_css_classes": "pp-promo"
+              },
+              "elements": []
+            },
+            {
+              "id": "54d72ef6",
+              "elType": "widget",
+              "isInner": false,
+              "widgetType": "heading",
+              "settings": {
                 "title": "Prepare-se para demonstrar que está <span style=\"color: #F0A90B;\">pronto para ser contratado.</span>",
                 "header_size": "h1",
                 "title_color": "#FFFFFF",
@@ -255,7 +292,7 @@
               "elements": []
             },
             {
-              "id": "54d72ef6",
+              "id": "37784549",
               "elType": "widget",
               "isInner": false,
               "widgetType": "text-editor",
@@ -284,7 +321,7 @@
               "elements": []
             },
             {
-              "id": "37784549",
+              "id": "bd08b088",
               "elType": "widget",
               "isInner": false,
               "widgetType": "button",
@@ -331,7 +368,7 @@
               "elements": []
             },
             {
-              "id": "ba94be2f",
+              "id": "619b5db8",
               "elType": "widget",
               "isInner": false,
               "widgetType": "icon-list",
@@ -344,7 +381,7 @@
                       "value": "fas fa-check-circle",
                       "library": "fa-solid"
                     },
-                    "_id": "bd08b08",
+                    "_id": "d62a4ef",
                     "link": {
                       "url": "",
                       "is_external": "",
@@ -357,7 +394,7 @@
                       "value": "fas fa-check-circle",
                       "library": "fa-solid"
                     },
-                    "_id": "d62a4ef",
+                    "_id": "07f30be",
                     "link": {
                       "url": "",
                       "is_external": "",
@@ -370,7 +407,7 @@
                       "value": "fas fa-check-circle",
                       "library": "fa-solid"
                     },
-                    "_id": "07f30be",
+                    "_id": "ba94be2",
                     "link": {
                       "url": "",
                       "is_external": "",
@@ -407,7 +444,7 @@
               "elements": []
             },
             {
-              "id": "619b5db8",
+              "id": "2ee70646",
               "elType": "widget",
               "isInner": false,
               "widgetType": "text-editor",
@@ -440,7 +477,7 @@
       ]
     },
     {
-      "id": "370af04b",
+      "id": "0773721c",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -488,7 +525,7 @@
       },
       "elements": [
         {
-          "id": "4698646c",
+          "id": "211df9f9",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -519,7 +556,7 @@
           "elements": []
         },
         {
-          "id": "211df9f9",
+          "id": "2f67f09f",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -556,7 +593,7 @@
           "elements": []
         },
         {
-          "id": "2f67f09f",
+          "id": "e7532fff",
           "elType": "widget",
           "isInner": false,
           "widgetType": "text-editor",
@@ -585,7 +622,7 @@
           "elements": []
         },
         {
-          "id": "7353edf1",
+          "id": "8e457378",
           "elType": "widget",
           "isInner": false,
           "widgetType": "icon-list",
@@ -598,7 +635,7 @@
                   "value": "fas fa-question",
                   "library": "fa-solid"
                 },
-                "_id": "e7532ff",
+                "_id": "4764e75",
                 "link": {
                   "url": "",
                   "is_external": "",
@@ -611,7 +648,7 @@
                   "value": "fas fa-question",
                   "library": "fa-solid"
                 },
-                "_id": "4764e75",
+                "_id": "b6c61b3",
                 "link": {
                   "url": "",
                   "is_external": "",
@@ -624,7 +661,7 @@
                   "value": "fas fa-question",
                   "library": "fa-solid"
                 },
-                "_id": "b6c61b3",
+                "_id": "70d0b65",
                 "link": {
                   "url": "",
                   "is_external": "",
@@ -637,7 +674,7 @@
                   "value": "fas fa-question",
                   "library": "fa-solid"
                 },
-                "_id": "70d0b65",
+                "_id": "7353edf",
                 "link": {
                   "url": "",
                   "is_external": "",
@@ -674,7 +711,7 @@
           "elements": []
         },
         {
-          "id": "8e457378",
+          "id": "370af04b",
           "elType": "widget",
           "isInner": false,
           "widgetType": "text-editor",
@@ -705,7 +742,7 @@
       ]
     },
     {
-      "id": "e61ebd44",
+      "id": "1b85719b",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -753,7 +790,7 @@
       },
       "elements": [
         {
-          "id": "0773721c",
+          "id": "3587af9e",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -784,7 +821,7 @@
           "elements": []
         },
         {
-          "id": "3587af9e",
+          "id": "c54adbee",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -821,7 +858,7 @@
           "elements": []
         },
         {
-          "id": "c54adbee",
+          "id": "e61ebd44",
           "elType": "widget",
           "isInner": false,
           "widgetType": "text-editor",
@@ -852,7 +889,7 @@
       ]
     },
     {
-      "id": "244be1fd",
+      "id": "0bfd2797",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -900,7 +937,7 @@
       },
       "elements": [
         {
-          "id": "1b85719b",
+          "id": "9302e4a4",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -931,7 +968,7 @@
           "elements": []
         },
         {
-          "id": "9302e4a4",
+          "id": "bba908e0",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -968,7 +1005,7 @@
           "elements": []
         },
         {
-          "id": "a87a3b5a",
+          "id": "e8b1f130",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -994,7 +1031,7 @@
           },
           "elements": [
             {
-              "id": "f87cbabb",
+              "id": "b1ab40aa",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -1010,7 +1047,7 @@
               },
               "elements": [
                 {
-                  "id": "bba908e0",
+                  "id": "d0ca0246",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -1046,7 +1083,7 @@
                   "elements": []
                 },
                 {
-                  "id": "d0ca0246",
+                  "id": "549cdbe7",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -1081,7 +1118,7 @@
                   "elements": []
                 },
                 {
-                  "id": "549cdbe7",
+                  "id": "f87cbabb",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "text-editor",
@@ -1112,7 +1149,7 @@
               ]
             },
             {
-              "id": "e50213e4",
+              "id": "7cc62904",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -1128,7 +1165,7 @@
               },
               "elements": [
                 {
-                  "id": "b1ab40aa",
+                  "id": "ccda1f10",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -1164,7 +1201,7 @@
                   "elements": []
                 },
                 {
-                  "id": "ccda1f10",
+                  "id": "0fe790b6",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -1199,7 +1236,7 @@
                   "elements": []
                 },
                 {
-                  "id": "0fe790b6",
+                  "id": "e50213e4",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "text-editor",
@@ -1230,7 +1267,7 @@
               ]
             },
             {
-              "id": "51a043ae",
+              "id": "8a50098d",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -1246,7 +1283,7 @@
               },
               "elements": [
                 {
-                  "id": "7cc62904",
+                  "id": "843f7e98",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -1282,7 +1319,7 @@
                   "elements": []
                 },
                 {
-                  "id": "843f7e98",
+                  "id": "89aef11d",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -1317,7 +1354,7 @@
                   "elements": []
                 },
                 {
-                  "id": "89aef11d",
+                  "id": "51a043ae",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "text-editor",
@@ -1348,7 +1385,7 @@
               ]
             },
             {
-              "id": "4a333b85",
+              "id": "a87a3b5a",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -1364,7 +1401,7 @@
               },
               "elements": [
                 {
-                  "id": "8a50098d",
+                  "id": "8046f2fc",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -1400,7 +1437,7 @@
                   "elements": []
                 },
                 {
-                  "id": "8046f2fc",
+                  "id": "05bb5dfc",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -1435,7 +1472,7 @@
                   "elements": []
                 },
                 {
-                  "id": "05bb5dfc",
+                  "id": "4a333b85",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "text-editor",
@@ -1468,7 +1505,7 @@
           ]
         },
         {
-          "id": "e8b1f130",
+          "id": "244be1fd",
           "elType": "widget",
           "isInner": false,
           "widgetType": "button",
@@ -1517,7 +1554,7 @@
       ]
     },
     {
-      "id": "37c93106",
+      "id": "2aa82461",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -1565,7 +1602,7 @@
       },
       "elements": [
         {
-          "id": "0bfd2797",
+          "id": "be028233",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -1596,7 +1633,7 @@
           "elements": []
         },
         {
-          "id": "be028233",
+          "id": "93d1fc50",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -1633,7 +1670,7 @@
           "elements": []
         },
         {
-          "id": "23c9cc23",
+          "id": "e729c78a",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -1658,7 +1695,7 @@
           },
           "elements": [
             {
-              "id": "736b0525",
+              "id": "62746e45",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -1682,7 +1719,7 @@
               },
               "elements": [
                 {
-                  "id": "93d1fc50",
+                  "id": "557901aa",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "text-editor",
@@ -1711,7 +1748,7 @@
                   "elements": []
                 },
                 {
-                  "id": "ded4189e",
+                  "id": "2e9773ab",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "icon-list",
@@ -1724,7 +1761,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "557901a",
+                        "_id": "136a2ad",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -1737,7 +1774,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "136a2ad",
+                        "_id": "44a4fed",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -1750,7 +1787,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "44a4fed",
+                        "_id": "b448c31",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -1763,7 +1800,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "b448c31",
+                        "_id": "6b4b3e3",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -1776,7 +1813,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "6b4b3e3",
+                        "_id": "ded4189",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -1813,7 +1850,7 @@
                   "elements": []
                 },
                 {
-                  "id": "2e9773ab",
+                  "id": "736b0525",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "text-editor",
@@ -1844,7 +1881,7 @@
               ]
             },
             {
-              "id": "62746e45",
+              "id": "23c9cc23",
               "elType": "widget",
               "isInner": false,
               "widgetType": "html",
@@ -1857,7 +1894,7 @@
           ]
         },
         {
-          "id": "e729c78a",
+          "id": "ea950905",
           "elType": "widget",
           "isInner": false,
           "widgetType": "button",
@@ -1904,7 +1941,7 @@
           "elements": []
         },
         {
-          "id": "ea950905",
+          "id": "37c93106",
           "elType": "widget",
           "isInner": false,
           "widgetType": "text-editor",
@@ -1935,7 +1972,7 @@
       ]
     },
     {
-      "id": "eda5e911",
+      "id": "39c613f5",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -1983,7 +2020,7 @@
       },
       "elements": [
         {
-          "id": "2aa82461",
+          "id": "3a3905b8",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -2014,7 +2051,7 @@
           "elements": []
         },
         {
-          "id": "3a3905b8",
+          "id": "730e994d",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -2051,7 +2088,7 @@
           "elements": []
         },
         {
-          "id": "71c797a0",
+          "id": "eda5e911",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -2077,7 +2114,7 @@
           },
           "elements": [
             {
-              "id": "730e994d",
+              "id": "fa6c4ee6",
               "elType": "widget",
               "isInner": false,
               "widgetType": "icon-box",
@@ -2137,7 +2174,7 @@
               "elements": []
             },
             {
-              "id": "fa6c4ee6",
+              "id": "7dbcc221",
               "elType": "widget",
               "isInner": false,
               "widgetType": "icon-box",
@@ -2197,7 +2234,7 @@
               "elements": []
             },
             {
-              "id": "7dbcc221",
+              "id": "66395f36",
               "elType": "widget",
               "isInner": false,
               "widgetType": "icon-box",
@@ -2257,7 +2294,7 @@
               "elements": []
             },
             {
-              "id": "66395f36",
+              "id": "71c797a0",
               "elType": "widget",
               "isInner": false,
               "widgetType": "icon-box",
@@ -2321,7 +2358,7 @@
       ]
     },
     {
-      "id": "7ed060cf",
+      "id": "6211fd74",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -2369,7 +2406,7 @@
       },
       "elements": [
         {
-          "id": "39c613f5",
+          "id": "7fc18b71",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -2400,7 +2437,7 @@
           "elements": []
         },
         {
-          "id": "7fc18b71",
+          "id": "f8435b9d",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -2437,7 +2474,7 @@
           "elements": []
         },
         {
-          "id": "23387b5a",
+          "id": "7bba02cb",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -2463,7 +2500,7 @@
           },
           "elements": [
             {
-              "id": "f8435b9d",
+              "id": "010532b7",
               "elType": "widget",
               "isInner": false,
               "widgetType": "icon-box",
@@ -2523,7 +2560,7 @@
               "elements": []
             },
             {
-              "id": "010532b7",
+              "id": "131a1635",
               "elType": "widget",
               "isInner": false,
               "widgetType": "icon-box",
@@ -2583,7 +2620,7 @@
               "elements": []
             },
             {
-              "id": "131a1635",
+              "id": "497baa89",
               "elType": "widget",
               "isInner": false,
               "widgetType": "icon-box",
@@ -2643,7 +2680,7 @@
               "elements": []
             },
             {
-              "id": "497baa89",
+              "id": "15638296",
               "elType": "widget",
               "isInner": false,
               "widgetType": "icon-box",
@@ -2703,7 +2740,7 @@
               "elements": []
             },
             {
-              "id": "15638296",
+              "id": "74b6f073",
               "elType": "widget",
               "isInner": false,
               "widgetType": "icon-box",
@@ -2763,7 +2800,7 @@
               "elements": []
             },
             {
-              "id": "74b6f073",
+              "id": "b208aff6",
               "elType": "widget",
               "isInner": false,
               "widgetType": "icon-box",
@@ -2823,7 +2860,7 @@
               "elements": []
             },
             {
-              "id": "b208aff6",
+              "id": "23387b5a",
               "elType": "widget",
               "isInner": false,
               "widgetType": "icon-box",
@@ -2885,7 +2922,7 @@
           ]
         },
         {
-          "id": "7bba02cb",
+          "id": "7ed060cf",
           "elType": "widget",
           "isInner": false,
           "widgetType": "text-editor",
@@ -2916,7 +2953,7 @@
       ]
     },
     {
-      "id": "9f8f7139",
+      "id": "d054fae3",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -2964,7 +3001,7 @@
       },
       "elements": [
         {
-          "id": "6211fd74",
+          "id": "c10b3523",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -2995,7 +3032,7 @@
           "elements": []
         },
         {
-          "id": "c10b3523",
+          "id": "62d2fdea",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -3032,7 +3069,7 @@
           "elements": []
         },
         {
-          "id": "62d2fdea",
+          "id": "51270a7d",
           "elType": "widget",
           "isInner": false,
           "widgetType": "text-editor",
@@ -3061,7 +3098,7 @@
           "elements": []
         },
         {
-          "id": "51270a7d",
+          "id": "5c0d0413",
           "elType": "widget",
           "isInner": false,
           "widgetType": "image-carousel",
@@ -3106,7 +3143,7 @@
           "elements": []
         },
         {
-          "id": "5c0d0413",
+          "id": "9f8f7139",
           "elType": "widget",
           "isInner": false,
           "widgetType": "text-editor",
@@ -3137,7 +3174,7 @@
       ]
     },
     {
-      "id": "681e5f20",
+      "id": "0f539c99",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -3185,7 +3222,7 @@
       },
       "elements": [
         {
-          "id": "ff5165c7",
+          "id": "681e5f20",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3210,7 +3247,7 @@
           },
           "elements": [
             {
-              "id": "d054fae3",
+              "id": "92bd9222",
               "elType": "widget",
               "isInner": false,
               "widgetType": "image",
@@ -3238,7 +3275,7 @@
               "elements": []
             },
             {
-              "id": "e62513e2",
+              "id": "ff5165c7",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -3262,7 +3299,7 @@
               },
               "elements": [
                 {
-                  "id": "92bd9222",
+                  "id": "e72e1bde",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -3293,7 +3330,7 @@
                   "elements": []
                 },
                 {
-                  "id": "e72e1bde",
+                  "id": "45df0740",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -3330,7 +3367,7 @@
                   "elements": []
                 },
                 {
-                  "id": "5f228315",
+                  "id": "ef3381df",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "icon-list",
@@ -3343,7 +3380,7 @@
                           "value": "fas fa-check-circle",
                           "library": "fa-solid"
                         },
-                        "_id": "45df074",
+                        "_id": "a324de3",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -3356,7 +3393,7 @@
                           "value": "fas fa-check-circle",
                           "library": "fa-solid"
                         },
-                        "_id": "a324de3",
+                        "_id": "a5ccc02",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -3369,7 +3406,7 @@
                           "value": "fas fa-check-circle",
                           "library": "fa-solid"
                         },
-                        "_id": "a5ccc02",
+                        "_id": "5f22831",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -3406,7 +3443,7 @@
                   "elements": []
                 },
                 {
-                  "id": "ef3381df",
+                  "id": "e62513e2",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "text-editor",
@@ -3441,7 +3478,7 @@
       ]
     },
     {
-      "id": "44bf69e0",
+      "id": "34a24ece",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -3490,7 +3527,7 @@
       },
       "elements": [
         {
-          "id": "0f539c99",
+          "id": "4c74135e",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -3521,7 +3558,7 @@
           "elements": []
         },
         {
-          "id": "4c74135e",
+          "id": "67e4fadc",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -3558,7 +3595,7 @@
           "elements": []
         },
         {
-          "id": "be0fdc54",
+          "id": "8c425ac6",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -3583,7 +3620,7 @@
           },
           "elements": [
             {
-              "id": "a4ed2881",
+              "id": "a863bef9",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -3602,7 +3639,7 @@
               },
               "elements": [
                 {
-                  "id": "67e4fadc",
+                  "id": "3dbcfade",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -3637,7 +3674,7 @@
                   "elements": []
                 },
                 {
-                  "id": "8122516b",
+                  "id": "5abea5ef",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "icon-list",
@@ -3650,7 +3687,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "3dbcfad",
+                        "_id": "a42e1c3",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -3663,7 +3700,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "a42e1c3",
+                        "_id": "0495b43",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -3676,7 +3713,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "0495b43",
+                        "_id": "88eea0c",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -3689,7 +3726,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "88eea0c",
+                        "_id": "3d9e86b",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -3702,7 +3739,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "3d9e86b",
+                        "_id": "c16b76d",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -3715,7 +3752,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "c16b76d",
+                        "_id": "b90da0f",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -3728,7 +3765,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "b90da0f",
+                        "_id": "d2fe040",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -3741,7 +3778,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "d2fe040",
+                        "_id": "8b8a9ce",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -3754,7 +3791,7 @@
                           "value": "fas fa-check",
                           "library": "fa-solid"
                         },
-                        "_id": "8b8a9ce",
+                        "_id": "8122516",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -3791,7 +3828,7 @@
                   "elements": []
                 },
                 {
-                  "id": "5abea5ef",
+                  "id": "a4ed2881",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "text-editor",
@@ -3822,7 +3859,7 @@
               ]
             },
             {
-              "id": "7bac1e7b",
+              "id": "44bf69e0",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -3841,12 +3878,12 @@
               },
               "elements": [
                 {
-                  "id": "a863bef9",
+                  "id": "a660a690",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
                   "settings": {
-                    "title": "Investimento",
+                    "title": "Mês do Aviador · até 31/10",
                     "header_size": "div",
                     "align": "center",
                     "typography_typography": "custom",
@@ -3867,17 +3904,54 @@
                       "sizes": []
                     },
                     "typography_font_weight": "600",
-                    "_css_classes": "pp-eyebrow pp-reveal"
+                    "_css_classes": "pp-eyebrow pp-reveal pp-eyebrow-promo"
                   },
                   "elements": []
                 },
                 {
-                  "id": "a660a690",
+                  "id": "4fbd7b6f",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
                   "settings": {
-                    "title": "R$ 697<span class=\"pp-price-sub\">à vista</span>",
+                    "title": "De <s>R$ 697,00</s> <span class=\"pp-save\">economize R$ 100</span>",
+                    "header_size": "div",
+                    "title_color": "#3A4553",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Sora",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 16,
+                      "sizes": []
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 15,
+                      "sizes": []
+                    },
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.4,
+                      "sizes": []
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 32,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "500",
+                    "align": "center",
+                    "_css_classes": "pp-old-price"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "30813a13",
+                  "elType": "widget",
+                  "isInner": false,
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "<span class=\"pp-price-por\">por</span>R$ 597<span class=\"pp-price-sub\">à vista</span>",
                     "header_size": "div",
                     "title_color": "#0B1D31",
                     "typography_typography": "custom",
@@ -3909,36 +3983,55 @@
                   "elements": []
                 },
                 {
-                  "id": "4fbd7b6f",
+                  "id": "744aad1b",
                   "elType": "widget",
                   "isInner": false,
-                  "widgetType": "text-editor",
+                  "widgetType": "heading",
                   "settings": {
-                    "editor": "<p>Opções de parcelamento disponíveis no checkout.</p>",
-                    "text_color": "#3A4553",
+                    "title": "ou <strong>12x de R$ 61,74</strong>",
+                    "header_size": "div",
+                    "title_color": "#0B1D31",
                     "typography_typography": "custom",
                     "typography_font_family": "Sora",
                     "typography_font_size": {
                       "unit": "px",
-                      "size": 15,
+                      "size": 18,
                       "sizes": []
                     },
                     "typography_font_size_mobile": {
                       "unit": "px",
-                      "size": 14,
+                      "size": 17,
                       "sizes": []
                     },
                     "typography_line_height": {
                       "unit": "em",
-                      "size": 1.6,
+                      "size": 1.4,
                       "sizes": []
                     },
-                    "_css_classes": "pp-text pp-center"
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 32,
+                      "sizes": []
+                    },
+                    "typography_font_weight": "500",
+                    "align": "center",
+                    "_css_classes": "pp-installments"
                   },
                   "elements": []
                 },
                 {
-                  "id": "30813a13",
+                  "id": "5e52a078",
+                  "elType": "widget",
+                  "isInner": false,
+                  "widgetType": "html",
+                  "settings": {
+                    "html": "<div class=\"pp-countdown\" data-end=\"2026-10-31T23:59:59-03:00\" aria-live=\"off\">\n  <span class=\"pp-cd-label\">A condição termina em</span>\n  <div class=\"pp-cd-grid\"><div><b data-u=\"d\">00</b><small>dias</small></div><div><b data-u=\"h\">00</b><small>horas</small></div><div><b data-u=\"m\">00</b><small>min</small></div><div><b data-u=\"s\">00</b><small>seg</small></div></div>\n</div>",
+                    "_css_classes": "pp-cd-wrap"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "6b8bf527",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "button",
@@ -3985,7 +4078,7 @@
                   "elements": []
                 },
                 {
-                  "id": "9f9ef7dd",
+                  "id": "d11868a5",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "icon-list",
@@ -3998,7 +4091,7 @@
                           "value": "fas fa-shield-alt",
                           "library": "fa-solid"
                         },
-                        "_id": "744aad1",
+                        "_id": "9f9ef7d",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -4011,7 +4104,7 @@
                           "value": "fas fa-shield-alt",
                           "library": "fa-solid"
                         },
-                        "_id": "5e52a07",
+                        "_id": "7bac1e7",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -4024,7 +4117,7 @@
                           "value": "fas fa-shield-alt",
                           "library": "fa-solid"
                         },
-                        "_id": "6b8bf52",
+                        "_id": "be0fdc5",
                         "link": {
                           "url": "",
                           "is_external": "",
@@ -4065,7 +4158,7 @@
           ]
         },
         {
-          "id": "d11868a5",
+          "id": "bef0336c",
           "elType": "widget",
           "isInner": false,
           "widgetType": "text-editor",
@@ -4096,7 +4189,7 @@
       ]
     },
     {
-      "id": "c1d6e39d",
+      "id": "fe1ea0f8",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -4144,7 +4237,7 @@
       },
       "elements": [
         {
-          "id": "9bc04812",
+          "id": "eb983f09",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -4161,7 +4254,7 @@
           },
           "elements": [
             {
-              "id": "8c425ac6",
+              "id": "9128ca50",
               "elType": "widget",
               "isInner": false,
               "widgetType": "image",
@@ -4189,7 +4282,7 @@
               "elements": []
             },
             {
-              "id": "347d17b5",
+              "id": "ed7488a2",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -4213,7 +4306,7 @@
               },
               "elements": [
                 {
-                  "id": "bef0336c",
+                  "id": "347d17b5",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "heading",
@@ -4250,7 +4343,7 @@
                   "elements": []
                 },
                 {
-                  "id": "34a24ece",
+                  "id": "9bc04812",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "text-editor",
@@ -4279,7 +4372,7 @@
                   "elements": []
                 },
                 {
-                  "id": "9128ca50",
+                  "id": "c1d6e39d",
                   "elType": "widget",
                   "isInner": false,
                   "widgetType": "button",
@@ -4332,7 +4425,7 @@
       ]
     },
     {
-      "id": "f90ef1eb",
+      "id": "e140303f",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -4380,7 +4473,7 @@
       },
       "elements": [
         {
-          "id": "ed7488a2",
+          "id": "2c428698",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -4411,7 +4504,7 @@
           "elements": []
         },
         {
-          "id": "eb983f09",
+          "id": "353bdff6",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -4448,7 +4541,7 @@
           "elements": []
         },
         {
-          "id": "e80a2480",
+          "id": "a212a9f7",
           "elType": "widget",
           "isInner": false,
           "widgetType": "toggle",
@@ -4457,57 +4550,62 @@
               {
                 "tab_title": "Ainda não tenho experiência em companhia aérea. O treinamento serve para mim?",
                 "tab_content": "<p>Sim. Você aprenderá a identificar exemplos da formação, de outros trabalhos e de situações da sua trajetória para demonstrar competências sem inventar experiência operacional.</p>",
-                "_id": "fe1ea0f"
+                "_id": "9a6855f"
               },
               {
                 "tab_title": "Já sou um piloto experiente. Como posso aproveitar?",
                 "tab_content": "<p>O treinamento ajuda a selecionar experiências relevantes e apresentá-las com clareza, relacionando suas ações, decisões e aprendizados às perguntas da entrevista.</p>",
-                "_id": "2c42869"
+                "_id": "e8062f9"
               },
               {
                 "tab_title": "O curso inclui preparação técnica ou para simulador?",
                 "tab_content": "<p>Não. O foco é a preparação comportamental: autoconhecimento, comunicação, respostas de entrevista e posicionamento profissional.</p>",
-                "_id": "353bdff"
+                "_id": "beebdfb"
               },
               {
                 "tab_title": "Como funciona o Entrevistador IA?",
                 "tab_content": "<p>Você interage com um agente configurado para simular entrevistas de pilotos e pratica a construção das suas respostas. Ele é parte do sistema de preparação Piloto Preparado, sem cobrança adicional. Consulte as orientações de uso disponibilizadas na plataforma.</p>",
-                "_id": "9a6855f"
+                "_id": "7d6e4d3"
               },
               {
                 "tab_title": "Por quanto tempo tenho acesso?",
                 "tab_content": "<p>O acesso ao Piloto Preparado é de 1 ano. O Entrevistador IA faz parte do sistema e está incluído nesse acesso, sem cobrança adicional.</p>",
-                "_id": "e8062f9"
+                "_id": "b331c81"
               },
               {
                 "tab_title": "Existe simulação individual com a Olga incluída?",
                 "tab_content": "<p>A prática incluída nesta oferta é a simulação com IA. A simulação individual com avaliação humana é um serviço contratado separadamente.</p>",
-                "_id": "beebdfb"
+                "_id": "dc2f2cb"
               },
               {
                 "tab_title": "Como funciona o suporte?",
                 "tab_content": "<p>Você conta com suporte para dúvidas sobre o treinamento por 1 ano, pelos canais de atendimento disponibilizados na plataforma. O suporte não equivale a mentoria ou avaliação individual de entrevistas.</p>",
-                "_id": "7d6e4d3"
+                "_id": "bceabf3"
               },
               {
                 "tab_title": "Tenho uma seleção próxima. Consigo aproveitar?",
                 "tab_content": "<p>Use o cronograma para priorizar o conteúdo conforme o tempo disponível. O aproveitamento depende do seu ponto de partida e da dedicação aos exercícios.</p>",
-                "_id": "b331c81"
+                "_id": "858e911"
               },
               {
                 "tab_title": "O treinamento garante aprovação?",
                 "tab_content": "<p>Não. O Piloto Preparado oferece método, materiais e prática para sua preparação comportamental. A decisão de contratação pertence à empresa.</p>",
-                "_id": "dc2f2cb"
+                "_id": "e80a248"
               },
               {
                 "tab_title": "Como funciona a garantia?",
                 "tab_content": "<p>Você pode solicitar o reembolso em até 7 dias após a compra pelo atendimento ou pela plataforma de pagamento.</p>",
-                "_id": "bceabf3"
+                "_id": "f90ef1e"
+              },
+              {
+                "tab_title": "Até quando vale a condição do Mês do Aviador?",
+                "tab_content": "<p>A condição especial de R$ 597 à vista ou 12x de R$ 61,74 é válida até 31/10. Depois dessa data, a condição se encerra.</p>",
+                "_id": "2477170"
               },
               {
                 "tab_title": "Como faço a inscrição?",
                 "tab_content": "<p>Clique no botão de acesso ao Piloto Preparado. Você será direcionado ao checkout para consultar as condições, preencher seus dados e efetuar o pagamento.</p>",
-                "_id": "858e911"
+                "_id": "7035a82"
               }
             ],
             "selected_icon": {
@@ -4576,7 +4674,7 @@
       ]
     },
     {
-      "id": "a6d1790f",
+      "id": "3118928d",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -4624,7 +4722,7 @@
       },
       "elements": [
         {
-          "id": "24771705",
+          "id": "bba40d3a",
           "elType": "widget",
           "isInner": false,
           "widgetType": "heading",
@@ -4661,7 +4759,7 @@
           "elements": []
         },
         {
-          "id": "7035a820",
+          "id": "0dd1544c",
           "elType": "widget",
           "isInner": false,
           "widgetType": "text-editor",
@@ -4690,7 +4788,7 @@
           "elements": []
         },
         {
-          "id": "a212a9f7",
+          "id": "a6d1790f",
           "elType": "widget",
           "isInner": false,
           "widgetType": "button",
@@ -4737,7 +4835,36 @@
           "elements": []
         },
         {
-          "id": "e140303f",
+          "id": "1e65ff37",
+          "elType": "widget",
+          "isInner": false,
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Condição especial do <strong>Mês do Aviador</strong>: R$ 597 à vista ou 12x de R$ 61,74, válida até 31/10.</p>",
+            "text_color": "#AFC0D2",
+            "typography_typography": "custom",
+            "typography_font_family": "Sora",
+            "typography_font_size": {
+              "unit": "px",
+              "size": 14,
+              "sizes": []
+            },
+            "typography_font_size_mobile": {
+              "unit": "px",
+              "size": 13,
+              "sizes": []
+            },
+            "typography_line_height": {
+              "unit": "em",
+              "size": 1.6,
+              "sizes": []
+            },
+            "_css_classes": "pp-text pp-narrow pp-center pp-reveal"
+          },
+          "elements": []
+        },
+        {
+          "id": "2ff473e6",
           "elType": "widget",
           "isInner": false,
           "widgetType": "spacer",
@@ -4752,7 +4879,7 @@
           "elements": []
         },
         {
-          "id": "bba40d3a",
+          "id": "18a05de2",
           "elType": "widget",
           "isInner": false,
           "widgetType": "text-editor",
@@ -4781,7 +4908,7 @@
           "elements": []
         },
         {
-          "id": "0dd1544c",
+          "id": "f79ad013",
           "elType": "widget",
           "isInner": false,
           "widgetType": "button",
@@ -4808,7 +4935,7 @@
       ]
     },
     {
-      "id": "2ff473e6",
+      "id": "f3857ce7",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -4857,7 +4984,7 @@
       },
       "elements": [
         {
-          "id": "1e65ff37",
+          "id": "90ec9a6a",
           "elType": "widget",
           "isInner": false,
           "widgetType": "image",
